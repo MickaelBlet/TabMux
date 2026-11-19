@@ -26,10 +26,12 @@
 <text x="285.6 294.0 302.4" y="30.3" fill="#d0d0d0">src</text>
 <text x="747.6" y="30.3" fill="#e5e5e5">▲</text>
 <text x="756.0" y="30.3" fill="#666666">│</text>
-<text x="764.4 772.8 781.2" y="30.3" fill="#d0d0d0">git</text>
-<text x="798.0 806.4 814.8" y="30.3" fill="#d0d0d0">log</text>
-<text x="831.6 840.0 848.4 856.8 865.2 873.6 882.0 890.4 898.8" y="30.3" fill="#d0d0d0">--oneline</text>
-<text x="915.6 924.0" y="30.3" fill="#d0d0d0">-5</text>
+<text x="764.4 772.8 781.2 789.6 798.0 806.4 814.8 823.2 831.6" y="30.3" fill="#0dbc79">user@host</text>
+<text x="840.0" y="30.3" fill="#d0d0d0">:</text>
+<text x="848.4 856.8 865.2 873.6 882.0 890.4 898.8 907.2" y="30.3" fill="#2472c8">~/tabmux</text>
+<text x="915.6" y="30.3" fill="#d0d0d0">$</text>
+<text x="932.4 940.8 949.2" y="30.3" fill="#d0d0d0">git</text>
+<text x="966.0 974.4 982.8" y="30.3" fill="#d0d0d0">log</text>
 <text x="999.6" y="30.3" fill="#e5e5e5">▲</text>
 <text x="8.4" y="47.3" fill="#ffffff" font-weight="bold">1</text>
 <text x="25.2 33.6 42.0 50.4" y="47.3" fill="#ffffff" font-weight="bold">code</text>
@@ -43,12 +45,8 @@
 <text x="428.4 436.8" y="47.3" fill="#d0d0d0">ls</text>
 <text x="453.6 462.0 470.4" y="47.3" fill="#d0d0d0">src</text>
 <text x="747.6 756.0" y="47.3" fill="#666666">││</text>
-<text x="764.4 772.8 781.2 789.6 798.0 806.4 814.8 823.2 831.6" y="47.3" fill="#0dbc79">user@host</text>
-<text x="840.0" y="47.3" fill="#d0d0d0">:</text>
-<text x="848.4 856.8 865.2 873.6 882.0 890.4 898.8 907.2" y="47.3" fill="#2472c8">~/tabmux</text>
-<text x="915.6" y="47.3" fill="#d0d0d0">$</text>
-<text x="932.4 940.8 949.2" y="47.3" fill="#d0d0d0">git</text>
-<text x="966.0 974.4 982.8" y="47.3" fill="#d0d0d0">log</text>
+<text x="764.4 772.8 781.2 789.6 798.0 806.4 814.8 823.2 831.6" y="47.3" fill="#d0d0d0">--oneline</text>
+<text x="848.4 856.8" y="47.3" fill="#d0d0d0">-5</text>
 <text x="999.6" y="47.3" fill="#666666">│</text>
 <text x="8.4" y="64.3" fill="#ffffff" font-weight="bold">├</text>
 <text x="25.2 33.6 42.0 50.4 58.8 67.2 75.6 84.0" y="64.3" fill="#ffffff" font-weight="bold">~/tabmux</text>
@@ -59,9 +57,14 @@
 <text x="436.8 445.2 453.6 462.0 470.4 478.8 487.2 495.6 504.0" y="64.3" fill="#d0d0d0">search.rs</text>
 <text x="554.4 562.8 571.2 579.6 588.0 596.4" y="64.3" fill="#d0d0d0">tab.rs</text>
 <text x="747.6 756.0" y="64.3" fill="#666666">││</text>
-<text x="764.4 772.8 781.2 789.6 798.0 806.4 814.8 823.2 831.6" y="64.3" fill="#d0d0d0">--oneline</text>
-<text x="848.4 856.8" y="64.3" fill="#d0d0d0">-5</text>
-<text x="999.6" y="64.3" fill="#666666">│</text>
+<text x="764.4 772.8 781.2 789.6 798.0 806.4 814.8" y="64.3" fill="#e5e510">bdf9a5f</text>
+<text x="831.6" y="64.3" fill="#e5e510">(</text>
+<text x="840.0 848.4 856.8 865.2" y="64.3" fill="#11a8cd" font-weight="bold">HEAD</text>
+<text x="882.0 890.4" y="64.3" fill="#11a8cd" font-weight="bold">-&gt;</text>
+<text x="907.2 915.6 924.0 932.4" y="64.3" fill="#0dbc79" font-weight="bold">main</text>
+<text x="940.8" y="64.3" fill="#e5e510">,</text>
+<text x="957.6 966.0 974.4 982.8 991.2" y="64.3" fill="#cd3131" font-weight="bold">origi</text>
+<text x="999.6" y="64.3" fill="#e5e5e5">█</text>
 <text x="8.4" y="81.3" fill="#e5e5e5">├</text>
 <text x="25.2 33.6 42.0 50.4 58.8 67.2 75.6 84.0" y="81.3" fill="#e5e5e5">~/tabmux</text>
 <text x="235.2" y="81.3" fill="#f14c4c">×</text>
@@ -71,14 +74,12 @@
 <text x="436.8 445.2 453.6 462.0 470.4 478.8 487.2 495.6 504.0 512.4 520.8 529.2" y="81.3" fill="#d0d0d0">selection.rs</text>
 <text x="554.4 562.8 571.2 579.6 588.0" y="81.3" fill="#d0d0d0">ui.rs</text>
 <text x="747.6 756.0" y="81.3" fill="#666666">││</text>
-<text x="764.4 772.8 781.2 789.6 798.0 806.4 814.8" y="81.3" fill="#e5e510">a13bfd7</text>
-<text x="831.6" y="81.3" fill="#e5e510">(</text>
-<text x="840.0 848.4 856.8 865.2" y="81.3" fill="#11a8cd" font-weight="bold">HEAD</text>
-<text x="882.0 890.4" y="81.3" fill="#11a8cd" font-weight="bold">-&gt;</text>
-<text x="907.2 915.6 924.0 932.4" y="81.3" fill="#0dbc79" font-weight="bold">main</text>
-<text x="940.8" y="81.3" fill="#e5e510">,</text>
-<text x="957.6 966.0 974.4 982.8 991.2" y="81.3" fill="#cd3131" font-weight="bold">origi</text>
-<text x="999.6" y="81.3" fill="#666666">│</text>
+<text x="764.4 772.8 781.2 789.6 798.0 806.4" y="81.3" fill="#cd3131" font-weight="bold">n/main</text>
+<text x="814.8" y="81.3" fill="#e5e510">)</text>
+<text x="831.6 840.0 848.4 856.8 865.2" y="81.3" fill="#d0d0d0">Color</text>
+<text x="882.0 890.4 898.8 907.2 915.6 924.0 932.4 940.8 949.2 957.6 966.0" y="81.3" fill="#d0d0d0">multicursor</text>
+<text x="982.8 991.2" y="81.3" fill="#d0d0d0">se</text>
+<text x="999.6" y="81.3" fill="#e5e5e5">█</text>
 <text x="8.4" y="98.3" fill="#e5e5e5">└</text>
 <text x="25.2 33.6 42.0 50.4 58.8" y="98.3" fill="#e5e5e5">~/tab</text>
 <text x="67.2" y="98.3" fill="#d0d0d0">┌</text>
@@ -89,10 +90,8 @@
 <text x="210.0 218.4 226.8 235.2 243.6" y="98.3" fill="#d0d0d0">click</text>
 <text x="260.4 268.8" y="98.3" fill="#d0d0d0">to</text>
 <text x="285.6 294.0 302.4 310.8 319.2" y="98.3" fill="#d0d0d0">close</text>
-<text x="336.0 344.4 352.8 361.2 369.6 378.0 386.4 394.8 403.2 411.6 420.0 428.4 436.8 445.2 453.6 462.0 470.4 478.8 487.2 495.6 504.0 512.4 520.8 529.2 537.6 546.0 554.4 562.8 571.2 579.6 588.0 596.4 604.8 613.2 621.6 630.0 638.4 646.8 655.2 663.6 672.0 680.4 688.8 697.2 705.6 714.0 722.4 730.8 739.2 747.6 756.0 764.4 772.8 781.2 789.6 798.0 806.4 814.8 823.2 831.6 840.0 848.4 856.8 865.2 873.6 882.0 890.4 898.8 907.2 915.6 924.0 932.4" y="98.3" fill="#d0d0d0">──────────────────────────────────────────────────────────────────────┐I</text>
-<text x="949.2 957.6 966.0" y="98.3" fill="#d0d0d0">art</text>
-<text x="982.8 991.2" y="98.3" fill="#d0d0d0">in</text>
-<text x="999.6" y="98.3" fill="#666666">│</text>
+<text x="336.0 344.4 352.8 361.2 369.6 378.0 386.4 394.8 403.2 411.6 420.0 428.4 436.8 445.2 453.6 462.0 470.4 478.8 487.2 495.6 504.0 512.4 520.8 529.2 537.6 546.0 554.4 562.8 571.2 579.6 588.0 596.4 604.8 613.2 621.6 630.0 638.4 646.8 655.2 663.6 672.0 680.4 688.8 697.2 705.6 714.0 722.4 730.8 739.2 747.6 756.0 764.4 772.8 781.2 789.6 798.0 806.4 814.8 823.2 831.6 840.0 848.4 856.8 865.2 873.6 882.0 890.4 898.8 907.2 915.6 924.0 932.4 940.8 949.2 957.6 966.0 974.4" y="98.3" fill="#d0d0d0">──────────────────────────────────────────────────────────────────────┐purple</text>
+<text x="999.6" y="98.3" fill="#e5e5e5">█</text>
 <text x="8.4" y="115.3" fill="#d0d0d0">2</text>
 <text x="25.2 33.6 42.0" y="115.3" fill="#d0d0d0">git</text>
 <text x="67.2" y="115.3" fill="#d0d0d0">│</text>
@@ -103,8 +102,10 @@
 <text x="512.4" y="115.3" fill="#e5e510">x</text>
 <text x="604.8 613.2 621.6 630.0 638.4" y="115.3" fill="#d0d0d0">close</text>
 <text x="655.2 663.6 672.0 680.4" y="115.3" fill="#d0d0d0">pane</text>
-<text x="924.0 932.4" y="115.3" fill="#d0d0d0">│s</text>
-<text x="999.6" y="115.3" fill="#666666">│</text>
+<text x="924.0 932.4 940.8 949.2" y="115.3" fill="#d0d0d0">│res</text>
+<text x="966.0 974.4" y="115.3" fill="#d0d0d0">to</text>
+<text x="991.2" y="115.3" fill="#d0d0d0">R</text>
+<text x="999.6" y="115.3" fill="#e5e5e5">█</text>
 <text x="0.0" y="132.3" fill="#f5f543">[</text>
 <text x="67.2" y="132.3" fill="#d0d0d0">│</text>
 <text x="84.0" y="132.3" fill="#e5e510">&amp;</text>
@@ -119,10 +120,7 @@
 <text x="680.4 688.8 697.2 705.6" y="132.3" fill="#d0d0d0">grow</text>
 <text x="722.4 730.8 739.2 747.6 756.0 764.4 772.8" y="132.3" fill="#d0d0d0">sidebar</text>
 <text x="924.0" y="132.3" fill="#d0d0d0">│</text>
-<text x="932.4 940.8" y="132.3" fill="#cd3131" font-weight="bold">er</text>
-<text x="949.2" y="132.3" fill="#e5e510">)</text>
-<text x="966.0 974.4 982.8" y="132.3" fill="#d0d0d0">Add</text>
-<text x="999.6" y="132.3" fill="#666666">│</text>
+<text x="999.6" y="132.3" fill="#e5e5e5">█</text>
 <text x="67.2" y="149.3" fill="#d0d0d0">│</text>
 <text x="84.0" y="149.3" fill="#e5e510">n</text>
 <text x="100.8" y="149.3" fill="#e5e510">/</text>
@@ -138,8 +136,10 @@
 <text x="663.6 672.0 680.4 688.8" y="149.3" fill="#d0d0d0">hide</text>
 <text x="705.6 714.0 722.4" y="149.3" fill="#d0d0d0">tab</text>
 <text x="739.2 747.6 756.0 764.4" y="149.3" fill="#d0d0d0">list</text>
-<text x="924.0 932.4 940.8 949.2 957.6 966.0 974.4 982.8" y="149.3" fill="#d0d0d0">│iplexer</text>
-<text x="999.6" y="149.3" fill="#666666">│</text>
+<text x="924.0 932.4" y="149.3" fill="#d0d0d0">│I</text>
+<text x="949.2 957.6 966.0" y="149.3" fill="#d0d0d0">art</text>
+<text x="982.8 991.2" y="149.3" fill="#d0d0d0">in</text>
+<text x="999.6" y="149.3" fill="#e5e5e5">█</text>
 <text x="67.2" y="166.3" fill="#d0d0d0">│</text>
 <text x="84.0 92.4 100.8" y="166.3" fill="#e5e510">1-9</text>
 <text x="176.4 184.8" y="166.3" fill="#d0d0d0">go</text>
@@ -152,8 +152,8 @@
 <text x="688.8 697.2 705.6" y="166.3" fill="#d0d0d0">top</text>
 <text x="722.4 730.8 739.2" y="166.3" fill="#d0d0d0">tab</text>
 <text x="756.0 764.4 772.8" y="166.3" fill="#d0d0d0">bar</text>
-<text x="924.0" y="166.3" fill="#d0d0d0">│</text>
-<text x="999.6" y="166.3" fill="#666666">│</text>
+<text x="924.0 932.4" y="166.3" fill="#d0d0d0">│s</text>
+<text x="999.6" y="166.3" fill="#e5e5e5">█</text>
 <text x="67.2" y="183.3" fill="#d0d0d0">│</text>
 <text x="84.0" y="183.3" fill="#e5e510">r</text>
 <text x="176.4 184.8 193.2 201.6 210.0 218.4" y="183.3" fill="#d0d0d0">rename</text>
@@ -166,7 +166,10 @@
 <text x="705.6 714.0 722.4 730.8" y="183.3" fill="#d0d0d0">pane</text>
 <text x="747.6 756.0 764.4 772.8 781.2 789.6" y="183.3" fill="#d0d0d0">titles</text>
 <text x="924.0" y="183.3" fill="#d0d0d0">│</text>
-<text x="999.6" y="183.3" fill="#666666">│</text>
+<text x="932.4 940.8" y="183.3" fill="#cd3131" font-weight="bold">er</text>
+<text x="949.2" y="183.3" fill="#e5e510">)</text>
+<text x="966.0 974.4 982.8" y="183.3" fill="#d0d0d0">Add</text>
+<text x="999.6" y="183.3" fill="#e5e5e5">█</text>
 <text x="67.2" y="200.3" fill="#d0d0d0">│</text>
 <text x="84.0" y="200.3" fill="#e5e510">%</text>
 <text x="100.8" y="200.3" fill="#e5e510">/</text>
@@ -178,8 +181,8 @@
 <text x="495.6" y="200.3" fill="#666666">│</text>
 <text x="512.4" y="200.3" fill="#e5e510">q</text>
 <text x="604.8 613.2 621.6 630.0" y="200.3" fill="#d0d0d0">quit</text>
-<text x="924.0" y="200.3" fill="#d0d0d0">│</text>
-<text x="999.6" y="200.3" fill="#666666">│</text>
+<text x="924.0 932.4 940.8 949.2 957.6 966.0 974.4 982.8" y="200.3" fill="#d0d0d0">│iplexer</text>
+<text x="999.6" y="200.3" fill="#e5e5e5">█</text>
 <text x="67.2" y="217.3" fill="#d0d0d0">│</text>
 <text x="84.0" y="217.3" fill="#e5e510">&quot;</text>
 <text x="100.8" y="217.3" fill="#e5e510">/</text>
@@ -194,7 +197,7 @@
 <text x="646.8 655.2 663.6 672.0 680.4 688.8 697.2" y="217.3" fill="#d0d0d0">literal</text>
 <text x="714.0 722.4" y="217.3" fill="#d0d0d0">^b</text>
 <text x="924.0" y="217.3" fill="#d0d0d0">│</text>
-<text x="999.6" y="217.3" fill="#666666">│</text>
+<text x="999.6" y="217.3" fill="#e5e5e5">█</text>
 <text x="67.2" y="234.3" fill="#d0d0d0">│</text>
 <text x="84.0" y="234.3" fill="#e5e510">o</text>
 <text x="176.4 184.8 193.2 201.6" y="234.3" fill="#d0d0d0">next</text>
@@ -350,7 +353,7 @@
 <text x="999.6" y="404.3" fill="#666666">│</text>
 <text x="252.0" y="421.3" fill="#666666">│</text>
 <text x="747.6 756.0" y="421.3" fill="#666666">││</text>
-<text x="781.2 789.6 798.0 806.4" y="421.3" fill="#d0d0d0">5419</text>
+<text x="781.2 789.6 798.0 806.4" y="421.3" fill="#d0d0d0">5433</text>
 <text x="823.2 831.6 840.0 848.4 856.8" y="421.3" fill="#d0d0d0">total</text>
 <text x="999.6" y="421.3" fill="#666666">│</text>
 <text x="252.0" y="438.3" fill="#666666">│</text>
