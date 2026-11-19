@@ -59,3 +59,7 @@ prompt marks, key encoding.
 
 User and developer docs live in [`docs/`](README.md). Update the matching
 page in the same change as the behavior.
+
+Images live in `docs/img/` as SVG. `screen.svg` is a real capture: after a
+UI change, regenerate it with `scripts/screenshots.sh` (needs `tmux` and
+`python3`). Diagrams such as `event-loop.svg` are hand-written SVG.

@@ -35,18 +35,7 @@ TabMux is a single binary crate (no lib target), Rust edition 2024.
 
 ## Event loop
 
-```text
- ┌──────────────┐  Input(Event)             ┌──────────────────────────────┐
- │ input thread │──────────────┐            │ main loop                    │
- └──────────────┘              ▼            │                              │
-                         mpsc::channel ───▶ │  app.refresh()               │
- ┌──────────────┐  PtyOutput   ▲            │  terminal.draw(ui::draw)     │
- │ pane reader  │──────────────┤            │  ev = rx.recv()  (or recv_   │
- │ thread (×N)  │  PtyExit(id) │            │       timeout(BLINK) if bell)│
- └──────────────┘──────────────┘            │  app.handle(ev)              │
-                                            │  while try_recv: handle      │
-                                            └──────────────────────────────┘
-```
+![Event loop: input and pane reader threads feed one mpsc channel consumed by the main loop](img/event-loop.svg)
 
 - **One channel** carries every event. The input thread forwards crossterm
   events. Each pane has a reader thread that feeds PTY bytes into its parser,

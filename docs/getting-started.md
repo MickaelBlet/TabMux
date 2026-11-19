@@ -63,18 +63,7 @@ pane, the tab closes. When the last tab closes, TabMux quits.
 
 ## Screen tour
 
-```text
-┌ sidebar ─────────────┐┌ pane title ─────────────── [□][│][─][↔][≡][⌕][✕] ┐
-│      [▔][◀][✕]       ││                                                  │
-│      [+][?][▭]       ││   shell output                                   │
-│ code             ✎ × ││                                                  │
-│ ├ nvim             × │├──────────────────────────────────────────────────┤
-│ └ cargo test       × ││ pane title ──────────────────────────────────────│
-│ git              ✎ × ││                                                  │
-│ [        +       ][⌵]││                                                  │
-│[<][>] status         ││                                                  │
-└──────────────────────┘└──────────────────────────────────────────────────┘
-```
+![TabMux with the sidebar on the left and a tab split into three panes](img/screen.svg)
 
 ### Tab list
 

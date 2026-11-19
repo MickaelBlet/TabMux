@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" width="720" height="260" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13">
+  <style>
+    .box { fill: #f6f8fa; stroke: #57606a; stroke-width: 1.5; }
+    .main { fill: #ddf4ff; stroke: #0969da; stroke-width: 1.5; }
+    .chan { fill: #fff8c5; stroke: #9a6700; stroke-width: 1.5; }
+    .t { fill: #1f2328; }
+    .l { fill: #57606a; font-size: 12px; }
+    .a { stroke: #57606a; stroke-width: 1.5; fill: none; marker-end: url(#arrow); }
+    @media (prefers-color-scheme: dark) {
+      .box { fill: #161b22; stroke: #8b949e; }
+      .main { fill: #0c2d4a; stroke: #4493f8; }
+      .chan { fill: #3b2e00; stroke: #d29922; }
+      .t { fill: #e6edf3; }
+      .l { fill: #8b949e; }
+      .a { stroke: #8b949e; }
+      #arrow path { fill: #8b949e; }
+    }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <!-- producers -->
+  <rect class="box" x="10" y="30" width="150" height="44" rx="6"/>
+  <text class="t" x="85" y="57" text-anchor="middle">input thread</text>
+
+  <rect class="box" x="10" y="160" width="150" height="56" rx="6"/>
+  <text class="t" x="85" y="184" text-anchor="middle">pane reader</text>
+  <text class="t" x="85" y="202" text-anchor="middle">thread (×N)</text>
+
+  <!-- channel -->
+  <rect class="chan" x="245" y="100" width="140" height="40" rx="20"/>
+  <text class="t" x="315" y="125" text-anchor="middle">mpsc::channel</text>
+
+  <path class="a" d="M160,52 H315 V98"/>
+  <text class="l" x="172" y="44">Input(Event)</text>
+  <path class="a" d="M160,188 H315 V142"/>
+  <text class="l" x="172" y="180">PtyOutput</text>
+  <text class="l" x="172" y="206">PtyExit(id)</text>
+
+  <!-- main loop -->
+  <rect class="main" x="440" y="20" width="270" height="220" rx="6"/>
+  <text class="t" x="456" y="46" font-weight="bold">main loop</text>
+  <text class="t" x="456" y="76">app.refresh()</text>
+  <text class="t" x="456" y="100">terminal.draw(ui::draw)</text>
+  <text class="t" x="456" y="124">ev = rx.recv()</text>
+  <text class="l" x="472" y="144">or recv_timeout(BLINK)</text>
+  <text class="l" x="472" y="160">while a bell is pending</text>
+  <text class="t" x="456" y="186">app.handle(ev)</text>
+  <text class="t" x="456" y="210">while try_recv: handle</text>
+  <path class="a" d="M385,120 H438"/>
+</svg>
