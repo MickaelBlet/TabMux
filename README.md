@@ -2,6 +2,8 @@
 
 Terminal multiplexer with tabs and split panes, written in Rust.
 
+![TabMux with the sidebar on the left and a tab split into three panes](docs/img/screen.svg)
+
 ```sh
 tabmux [-w|--workspace <file.toml>]
 ```

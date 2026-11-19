@@ -1,0 +1,374 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1008 476" width="1008" height="476" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14">
+<rect width="100%" height="100%" fill="#1c1c1c"/>
+<rect x="260.4" y="0" width="495.9" height="17.3" fill="#2472c8"/>
+<rect x="764.4" y="0" width="243.9" height="17.3" fill="#303030"/>
+<rect x="0.0" y="34" width="252.3" height="17.3" fill="#303030"/>
+<rect x="0.0" y="51" width="252.3" height="17.3" fill="#2472c8"/>
+<rect x="932.4" y="255" width="75.9" height="17.3" fill="#303030"/>
+<text x="8.4 16.8 25.2 33.6 42.0" y="13.3" fill="#11a8cd" font-weight="bold">⢹⠁⢀⡀⣇</text>
+<text x="58.8 67.2 75.6 84.0 92.4 100.8 109.2" y="13.3" fill="#11a8cd" font-weight="bold">⡗⠔⡇⡀⡀⡀⡀</text>
+<text x="176.4 184.8 193.2 201.6 210.0 218.4" y="13.3" fill="#f5f543">[▔][◀]</text>
+<text x="226.8 235.2 243.6" y="13.3" fill="#f14c4c">[✕]</text>
+<text x="252.0" y="13.3" fill="#666666">│</text>
+<text x="268.8 277.2 285.6 294.0 302.4 310.8 319.2 327.6" y="13.3" fill="#ffffff" font-weight="bold">~/tabmux</text>
+<text x="579.6 588.0 596.4 604.8 613.2 621.6 630.0 638.4 646.8 655.2 663.6 672.0 680.4 688.8 697.2 705.6 714.0 722.4" y="13.3" fill="#f5f543" font-weight="bold">[□][│][─][↔][≡][⌕]</text>
+<text x="730.8 739.2 747.6" y="13.3" fill="#f14c4c" font-weight="bold">[✕]</text>
+<text x="756.0" y="13.3" fill="#666666">│</text>
+<text x="772.8 781.2 789.6 798.0 806.4 814.8 823.2" y="13.3" fill="#e5e5e5">~/tabmu</text>
+<text x="831.6 840.0 848.4 856.8 865.2 873.6 882.0 890.4 898.8 907.2 915.6 924.0 932.4 940.8 949.2 957.6 966.0 974.4" y="13.3" fill="#f5f543">[□][│][─][↔][≡][⌕]</text>
+<text x="982.8 991.2 999.6" y="13.3" fill="#f14c4c">[✕]</text>
+<text x="8.4" y="30.3" fill="#11a8cd" font-weight="bold">⠸</text>
+<text x="25.2 33.6 42.0 50.4 58.8" y="30.3" fill="#11a8cd" font-weight="bold">⠣⠇⠧⠃⠇</text>
+<text x="75.6 84.0 92.4 100.8 109.2" y="30.3" fill="#11a8cd" font-weight="bold">⠇⠣⠇⠜⠄</text>
+<text x="176.4 184.8 193.2 201.6 210.0 218.4 226.8 235.2 243.6" y="30.3" fill="#f5f543">[+][?][▭]</text>
+<text x="252.0" y="30.3" fill="#666666">│</text>
+<text x="260.4 268.8" y="30.3" fill="#d0d0d0">ls</text>
+<text x="285.6 294.0 302.4" y="30.3" fill="#d0d0d0">src</text>
+<text x="747.6" y="30.3" fill="#e5e5e5">▲</text>
+<text x="756.0" y="30.3" fill="#666666">│</text>
+<text x="764.4 772.8 781.2" y="30.3" fill="#d0d0d0">git</text>
+<text x="798.0 806.4 814.8" y="30.3" fill="#d0d0d0">log</text>
+<text x="831.6 840.0 848.4 856.8 865.2 873.6 882.0 890.4 898.8" y="30.3" fill="#d0d0d0">--oneline</text>
+<text x="915.6 924.0" y="30.3" fill="#d0d0d0">-5</text>
+<text x="999.6" y="30.3" fill="#e5e5e5">▲</text>
+<text x="8.4" y="47.3" fill="#ffffff" font-weight="bold">1</text>
+<text x="25.2 33.6 42.0 50.4" y="47.3" fill="#ffffff" font-weight="bold">code</text>
+<text x="218.4" y="47.3" fill="#f5f543" font-weight="bold">✎</text>
+<text x="235.2" y="47.3" fill="#f14c4c" font-weight="bold">×</text>
+<text x="252.0" y="47.3" fill="#666666">│</text>
+<text x="260.4 268.8 277.2 285.6 294.0 302.4 310.8 319.2 327.6" y="47.3" fill="#0dbc79">user@host</text>
+<text x="336.0" y="47.3" fill="#d0d0d0">:</text>
+<text x="344.4 352.8 361.2 369.6 378.0 386.4 394.8 403.2" y="47.3" fill="#2472c8">~/tabmux</text>
+<text x="411.6" y="47.3" fill="#d0d0d0">$</text>
+<text x="428.4 436.8" y="47.3" fill="#d0d0d0">ls</text>
+<text x="453.6 462.0 470.4" y="47.3" fill="#d0d0d0">src</text>
+<text x="747.6 756.0" y="47.3" fill="#666666">││</text>
+<text x="764.4 772.8 781.2 789.6 798.0 806.4 814.8 823.2 831.6" y="47.3" fill="#0dbc79">user@host</text>
+<text x="840.0" y="47.3" fill="#d0d0d0">:</text>
+<text x="848.4 856.8 865.2 873.6 882.0 890.4 898.8 907.2" y="47.3" fill="#2472c8">~/tabmux</text>
+<text x="915.6" y="47.3" fill="#d0d0d0">$</text>
+<text x="932.4 940.8 949.2" y="47.3" fill="#d0d0d0">git</text>
+<text x="966.0 974.4 982.8" y="47.3" fill="#d0d0d0">log</text>
+<text x="999.6" y="47.3" fill="#666666">│</text>
+<text x="8.4" y="64.3" fill="#ffffff" font-weight="bold">├</text>
+<text x="25.2 33.6 42.0 50.4 58.8 67.2 75.6 84.0" y="64.3" fill="#ffffff" font-weight="bold">~/tabmux</text>
+<text x="235.2" y="64.3" fill="#f14c4c" font-weight="bold">×</text>
+<text x="252.0" y="64.3" fill="#666666">│</text>
+<text x="260.4 268.8 277.2 285.6 294.0 302.4" y="64.3" fill="#d0d0d0">app.rs</text>
+<text x="352.8 361.2 369.6 378.0 386.4 394.8 403.2" y="64.3" fill="#d0d0d0">main.rs</text>
+<text x="436.8 445.2 453.6 462.0 470.4 478.8 487.2 495.6 504.0" y="64.3" fill="#d0d0d0">search.rs</text>
+<text x="554.4 562.8 571.2 579.6 588.0 596.4" y="64.3" fill="#d0d0d0">tab.rs</text>
+<text x="747.6 756.0" y="64.3" fill="#666666">││</text>
+<text x="764.4 772.8 781.2 789.6 798.0 806.4 814.8 823.2 831.6" y="64.3" fill="#d0d0d0">--oneline</text>
+<text x="848.4 856.8" y="64.3" fill="#d0d0d0">-5</text>
+<text x="999.6" y="64.3" fill="#666666">│</text>
+<text x="8.4" y="81.3" fill="#e5e5e5">├</text>
+<text x="25.2 33.6 42.0 50.4 58.8 67.2 75.6 84.0" y="81.3" fill="#e5e5e5">~/tabmux</text>
+<text x="235.2" y="81.3" fill="#f14c4c">×</text>
+<text x="252.0" y="81.3" fill="#666666">│</text>
+<text x="260.4 268.8 277.2 285.6 294.0 302.4 310.8 319.2" y="81.3" fill="#d0d0d0">event.rs</text>
+<text x="352.8 361.2 369.6 378.0 386.4 394.8 403.2 411.6" y="81.3" fill="#d0d0d0">marks.rs</text>
+<text x="436.8 445.2 453.6 462.0 470.4 478.8 487.2 495.6 504.0 512.4 520.8 529.2" y="81.3" fill="#d0d0d0">selection.rs</text>
+<text x="554.4 562.8 571.2 579.6 588.0" y="81.3" fill="#d0d0d0">ui.rs</text>
+<text x="747.6 756.0" y="81.3" fill="#666666">││</text>
+<text x="764.4 772.8 781.2 789.6 798.0 806.4 814.8" y="81.3" fill="#e5e510">a13bfd7</text>
+<text x="831.6" y="81.3" fill="#e5e510">(</text>
+<text x="840.0 848.4 856.8 865.2" y="81.3" fill="#11a8cd" font-weight="bold">HEAD</text>
+<text x="882.0 890.4" y="81.3" fill="#11a8cd" font-weight="bold">-&gt;</text>
+<text x="907.2 915.6 924.0 932.4" y="81.3" fill="#0dbc79" font-weight="bold">main</text>
+<text x="940.8" y="81.3" fill="#e5e510">,</text>
+<text x="957.6 966.0 974.4 982.8 991.2" y="81.3" fill="#cd3131" font-weight="bold">origi</text>
+<text x="999.6" y="81.3" fill="#666666">│</text>
+<text x="8.4" y="98.3" fill="#e5e5e5">└</text>
+<text x="25.2 33.6 42.0 50.4 58.8" y="98.3" fill="#e5e5e5">~/tab</text>
+<text x="67.2" y="98.3" fill="#d0d0d0">┌</text>
+<text x="84.0 92.4 100.8 109.2 117.6 126.0" y="98.3" fill="#d0d0d0">Ctrl-b</text>
+<text x="142.8" y="98.3" fill="#d0d0d0">+</text>
+<text x="159.6 168.0 176.4" y="98.3" fill="#d0d0d0">key</text>
+<text x="193.2" y="98.3" fill="#d0d0d0">·</text>
+<text x="210.0 218.4 226.8 235.2 243.6" y="98.3" fill="#d0d0d0">click</text>
+<text x="260.4 268.8" y="98.3" fill="#d0d0d0">to</text>
+<text x="285.6 294.0 302.4 310.8 319.2" y="98.3" fill="#d0d0d0">close</text>
+<text x="336.0 344.4 352.8 361.2 369.6 378.0 386.4 394.8 403.2 411.6 420.0 428.4 436.8 445.2 453.6 462.0 470.4 478.8 487.2 495.6 504.0 512.4 520.8 529.2 537.6 546.0 554.4 562.8 571.2 579.6 588.0 596.4 604.8 613.2 621.6 630.0 638.4 646.8 655.2 663.6 672.0 680.4 688.8 697.2 705.6 714.0 722.4 730.8 739.2 747.6 756.0 764.4 772.8 781.2 789.6 798.0 806.4 814.8 823.2 831.6 840.0 848.4 856.8 865.2 873.6 882.0 890.4 898.8 907.2 915.6 924.0 932.4" y="98.3" fill="#d0d0d0">──────────────────────────────────────────────────────────────────────┐I</text>
+<text x="949.2 957.6 966.0" y="98.3" fill="#d0d0d0">art</text>
+<text x="982.8 991.2" y="98.3" fill="#d0d0d0">in</text>
+<text x="999.6" y="98.3" fill="#666666">│</text>
+<text x="8.4" y="115.3" fill="#d0d0d0">2</text>
+<text x="25.2 33.6 42.0" y="115.3" fill="#d0d0d0">git</text>
+<text x="67.2" y="115.3" fill="#d0d0d0">│</text>
+<text x="84.0" y="115.3" fill="#e5e510">c</text>
+<text x="176.4 184.8 193.2" y="115.3" fill="#d0d0d0">new</text>
+<text x="210.0 218.4 226.8" y="115.3" fill="#d0d0d0">tab</text>
+<text x="495.6" y="115.3" fill="#666666">│</text>
+<text x="512.4" y="115.3" fill="#e5e510">x</text>
+<text x="604.8 613.2 621.6 630.0 638.4" y="115.3" fill="#d0d0d0">close</text>
+<text x="655.2 663.6 672.0 680.4" y="115.3" fill="#d0d0d0">pane</text>
+<text x="924.0 932.4" y="115.3" fill="#d0d0d0">│s</text>
+<text x="999.6" y="115.3" fill="#666666">│</text>
+<text x="0.0" y="132.3" fill="#f5f543">[</text>
+<text x="67.2" y="132.3" fill="#d0d0d0">│</text>
+<text x="84.0" y="132.3" fill="#e5e510">&amp;</text>
+<text x="176.4 184.8 193.2 201.6 210.0" y="132.3" fill="#d0d0d0">close</text>
+<text x="226.8 235.2 243.6" y="132.3" fill="#d0d0d0">tab</text>
+<text x="495.6" y="132.3" fill="#666666">│</text>
+<text x="512.4" y="132.3" fill="#e5e510">&lt;</text>
+<text x="529.2" y="132.3" fill="#e5e510">/</text>
+<text x="546.0" y="132.3" fill="#e5e510">&gt;</text>
+<text x="604.8 613.2 621.6 630.0 638.4 646.8" y="132.3" fill="#d0d0d0">shrink</text>
+<text x="663.6" y="132.3" fill="#d0d0d0">/</text>
+<text x="680.4 688.8 697.2 705.6" y="132.3" fill="#d0d0d0">grow</text>
+<text x="722.4 730.8 739.2 747.6 756.0 764.4 772.8" y="132.3" fill="#d0d0d0">sidebar</text>
+<text x="924.0" y="132.3" fill="#d0d0d0">│</text>
+<text x="932.4 940.8" y="132.3" fill="#cd3131" font-weight="bold">er</text>
+<text x="949.2" y="132.3" fill="#e5e510">)</text>
+<text x="966.0 974.4 982.8" y="132.3" fill="#d0d0d0">Add</text>
+<text x="999.6" y="132.3" fill="#666666">│</text>
+<text x="67.2" y="149.3" fill="#d0d0d0">│</text>
+<text x="84.0" y="149.3" fill="#e5e510">n</text>
+<text x="100.8" y="149.3" fill="#e5e510">/</text>
+<text x="117.6" y="149.3" fill="#e5e510">p</text>
+<text x="176.4 184.8 193.2 201.6" y="149.3" fill="#d0d0d0">next</text>
+<text x="218.4" y="149.3" fill="#d0d0d0">/</text>
+<text x="235.2 243.6 252.0 260.4 268.8 277.2 285.6 294.0" y="149.3" fill="#d0d0d0">previous</text>
+<text x="310.8 319.2 327.6" y="149.3" fill="#d0d0d0">tab</text>
+<text x="495.6" y="149.3" fill="#666666">│</text>
+<text x="512.4" y="149.3" fill="#e5e510">s</text>
+<text x="604.8 613.2 621.6 630.0" y="149.3" fill="#d0d0d0">show</text>
+<text x="646.8" y="149.3" fill="#d0d0d0">/</text>
+<text x="663.6 672.0 680.4 688.8" y="149.3" fill="#d0d0d0">hide</text>
+<text x="705.6 714.0 722.4" y="149.3" fill="#d0d0d0">tab</text>
+<text x="739.2 747.6 756.0 764.4" y="149.3" fill="#d0d0d0">list</text>
+<text x="924.0 932.4 940.8 949.2 957.6 966.0 974.4 982.8" y="149.3" fill="#d0d0d0">│iplexer</text>
+<text x="999.6" y="149.3" fill="#666666">│</text>
+<text x="67.2" y="166.3" fill="#d0d0d0">│</text>
+<text x="84.0 92.4 100.8" y="166.3" fill="#e5e510">1-9</text>
+<text x="176.4 184.8" y="166.3" fill="#d0d0d0">go</text>
+<text x="201.6 210.0" y="166.3" fill="#d0d0d0">to</text>
+<text x="226.8 235.2 243.6" y="166.3" fill="#d0d0d0">tab</text>
+<text x="495.6" y="166.3" fill="#666666">│</text>
+<text x="512.4" y="166.3" fill="#e5e510">t</text>
+<text x="604.8 613.2 621.6 630.0 638.4 646.8 655.2" y="166.3" fill="#d0d0d0">sidebar</text>
+<text x="672.0" y="166.3" fill="#d0d0d0">/</text>
+<text x="688.8 697.2 705.6" y="166.3" fill="#d0d0d0">top</text>
+<text x="722.4 730.8 739.2" y="166.3" fill="#d0d0d0">tab</text>
+<text x="756.0 764.4 772.8" y="166.3" fill="#d0d0d0">bar</text>
+<text x="924.0" y="166.3" fill="#d0d0d0">│</text>
+<text x="999.6" y="166.3" fill="#666666">│</text>
+<text x="67.2" y="183.3" fill="#d0d0d0">│</text>
+<text x="84.0" y="183.3" fill="#e5e510">r</text>
+<text x="176.4 184.8 193.2 201.6 210.0 218.4" y="183.3" fill="#d0d0d0">rename</text>
+<text x="235.2 243.6 252.0" y="183.3" fill="#d0d0d0">tab</text>
+<text x="495.6" y="183.3" fill="#666666">│</text>
+<text x="512.4" y="183.3" fill="#e5e510">T</text>
+<text x="604.8 613.2 621.6 630.0" y="183.3" fill="#d0d0d0">show</text>
+<text x="646.8" y="183.3" fill="#d0d0d0">/</text>
+<text x="663.6 672.0 680.4 688.8" y="183.3" fill="#d0d0d0">hide</text>
+<text x="705.6 714.0 722.4 730.8" y="183.3" fill="#d0d0d0">pane</text>
+<text x="747.6 756.0 764.4 772.8 781.2 789.6" y="183.3" fill="#d0d0d0">titles</text>
+<text x="924.0" y="183.3" fill="#d0d0d0">│</text>
+<text x="999.6" y="183.3" fill="#666666">│</text>
+<text x="67.2" y="200.3" fill="#d0d0d0">│</text>
+<text x="84.0" y="200.3" fill="#e5e510">%</text>
+<text x="100.8" y="200.3" fill="#e5e510">/</text>
+<text x="117.6" y="200.3" fill="#e5e510">|</text>
+<text x="176.4 184.8 193.2 201.6 210.0" y="200.3" fill="#d0d0d0">split</text>
+<text x="226.8 235.2 243.6 252.0" y="200.3" fill="#d0d0d0">side</text>
+<text x="268.8 277.2" y="200.3" fill="#d0d0d0">by</text>
+<text x="294.0 302.4 310.8 319.2" y="200.3" fill="#d0d0d0">side</text>
+<text x="495.6" y="200.3" fill="#666666">│</text>
+<text x="512.4" y="200.3" fill="#e5e510">q</text>
+<text x="604.8 613.2 621.6 630.0" y="200.3" fill="#d0d0d0">quit</text>
+<text x="924.0" y="200.3" fill="#d0d0d0">│</text>
+<text x="999.6" y="200.3" fill="#666666">│</text>
+<text x="67.2" y="217.3" fill="#d0d0d0">│</text>
+<text x="84.0" y="217.3" fill="#e5e510">&quot;</text>
+<text x="100.8" y="217.3" fill="#e5e510">/</text>
+<text x="117.6" y="217.3" fill="#e5e510">-</text>
+<text x="176.4 184.8 193.2 201.6 210.0" y="217.3" fill="#d0d0d0">split</text>
+<text x="226.8 235.2 243.6" y="217.3" fill="#d0d0d0">top</text>
+<text x="260.4" y="217.3" fill="#d0d0d0">/</text>
+<text x="277.2 285.6 294.0 302.4 310.8 319.2" y="217.3" fill="#d0d0d0">bottom</text>
+<text x="495.6" y="217.3" fill="#666666">│</text>
+<text x="512.4 520.8" y="217.3" fill="#e5e510">^b</text>
+<text x="604.8 613.2 621.6 630.0" y="217.3" fill="#d0d0d0">send</text>
+<text x="646.8 655.2 663.6 672.0 680.4 688.8 697.2" y="217.3" fill="#d0d0d0">literal</text>
+<text x="714.0 722.4" y="217.3" fill="#d0d0d0">^b</text>
+<text x="924.0" y="217.3" fill="#d0d0d0">│</text>
+<text x="999.6" y="217.3" fill="#666666">│</text>
+<text x="67.2" y="234.3" fill="#d0d0d0">│</text>
+<text x="84.0" y="234.3" fill="#e5e510">o</text>
+<text x="176.4 184.8 193.2 201.6" y="234.3" fill="#d0d0d0">next</text>
+<text x="218.4 226.8 235.2 243.6" y="234.3" fill="#d0d0d0">pane</text>
+<text x="495.6" y="234.3" fill="#666666">│</text>
+<text x="924.0" y="234.3" fill="#d0d0d0">│</text>
+<text x="999.6" y="234.3" fill="#e5e5e5">▼</text>
+<text x="67.2" y="251.3" fill="#d0d0d0">│</text>
+<text x="84.0 92.4 100.8 109.2 117.6 126.0 134.4 142.8 151.2 159.6" y="251.3" fill="#e5e510">^PgUp/PgDn</text>
+<text x="176.4 184.8 193.2 201.6" y="251.3" fill="#d0d0d0">prev</text>
+<text x="218.4" y="251.3" fill="#d0d0d0">/</text>
+<text x="235.2 243.6 252.0 260.4" y="251.3" fill="#d0d0d0">next</text>
+<text x="277.2 285.6 294.0" y="251.3" fill="#d0d0d0">tab</text>
+<text x="310.8 319.2" y="251.3" fill="#d0d0d0">or</text>
+<text x="336.0 344.4 352.8 361.2" y="251.3" fill="#d0d0d0">pane</text>
+<text x="378.0 386.4 394.8" y="251.3" fill="#d0d0d0">(no</text>
+<text x="411.6 420.0 428.4 436.8 445.2 453.6 462.0" y="251.3" fill="#d0d0d0">prefix)</text>
+<text x="495.6" y="251.3" fill="#666666">│</text>
+<text x="512.4 520.8 529.2 537.6 546.0" y="251.3" fill="#e5e510">mouse</text>
+<text x="604.8 613.2 621.6 630.0 638.4 646.8 655.2 663.6" y="251.3" fill="#d0d0d0">buttons,</text>
+<text x="680.4 688.8 697.2 705.6 714.0" y="251.3" fill="#d0d0d0">click</text>
+<text x="730.8 739.2" y="251.3" fill="#d0d0d0">to</text>
+<text x="756.0 764.4 772.8 781.2 789.6 798.0" y="251.3" fill="#d0d0d0">focus,</text>
+<text x="814.8 823.2 831.6 840.0" y="251.3" fill="#d0d0d0">drag</text>
+<text x="856.8 865.2 873.6 882.0 890.4 898.8 907.2" y="251.3" fill="#d0d0d0">borders</text>
+<text x="924.0" y="251.3" fill="#d0d0d0">│</text>
+<text x="932.4 940.8 949.2 957.6 966.0 974.4 982.8 991.2 999.6" y="251.3" fill="#666666">─────────</text>
+<text x="67.2" y="268.3" fill="#d0d0d0">│</text>
+<text x="84.0 92.4 100.8 109.2 117.6 126.0 134.4 142.8 151.2 159.6" y="268.3" fill="#e5e510">⇧PgUp/PgDn</text>
+<text x="176.4 184.8 193.2 201.6 210.0 218.4" y="268.3" fill="#d0d0d0">scroll</text>
+<text x="235.2 243.6 252.0 260.4" y="268.3" fill="#d0d0d0">pane</text>
+<text x="277.2 285.6" y="268.3" fill="#d0d0d0">by</text>
+<text x="302.4 310.8 319.2 327.6" y="268.3" fill="#d0d0d0">page</text>
+<text x="344.4 352.8 361.2" y="268.3" fill="#d0d0d0">(no</text>
+<text x="378.0 386.4 394.8 403.2 411.6 420.0 428.4" y="268.3" fill="#d0d0d0">prefix)</text>
+<text x="495.6" y="268.3" fill="#666666">│</text>
+<text x="604.8 613.2 621.6 630.0" y="268.3" fill="#d0d0d0">drag</text>
+<text x="646.8 655.2 663.6 672.0" y="268.3" fill="#d0d0d0">tabs</text>
+<text x="688.8 697.2" y="268.3" fill="#d0d0d0">to</text>
+<text x="714.0 722.4 730.8 739.2 747.6 756.0 764.4 772.8" y="268.3" fill="#d0d0d0">reorder,</text>
+<text x="789.6 798.0 806.4 814.8 823.2 831.6 840.0 848.4 856.8" y="268.3" fill="#d0d0d0">dbl-click</text>
+<text x="873.6 882.0 890.4 898.8 907.2 915.6 924.0" y="268.3" fill="#d0d0d0">rename│</text>
+<text x="932.4 940.8 949.2 957.6 966.0 974.4" y="268.3" fill="#f5f543">[≡][⌕]</text>
+<text x="982.8 991.2 999.6" y="268.3" fill="#f14c4c">[✕]</text>
+<text x="67.2" y="285.3" fill="#d0d0d0">│</text>
+<text x="84.0 92.4 100.8 109.2" y="285.3" fill="#e5e510">←↑↓→</text>
+<text x="126.0 134.4 142.8 151.2" y="285.3" fill="#e5e510">hjkl</text>
+<text x="176.4 184.8 193.2 201.6 210.0" y="285.3" fill="#d0d0d0">focus</text>
+<text x="226.8 235.2 243.6 252.0" y="285.3" fill="#d0d0d0">pane</text>
+<text x="268.8 277.2" y="285.3" fill="#d0d0d0">in</text>
+<text x="294.0 302.4 310.8 319.2 327.6 336.0 344.4 352.8 361.2" y="285.3" fill="#d0d0d0">direction</text>
+<text x="495.6" y="285.3" fill="#666666">│</text>
+<text x="604.8 613.2 621.6 630.0" y="285.3" fill="#d0d0d0">drag</text>
+<text x="646.8 655.2 663.6 672.0" y="285.3" fill="#d0d0d0">pane</text>
+<text x="688.8 697.2 705.6 714.0 722.4" y="285.3" fill="#d0d0d0">title</text>
+<text x="739.2" y="285.3" fill="#d0d0d0">/</text>
+<text x="756.0 764.4 772.8 781.2 789.6 798.0 806.4" y="285.3" fill="#d0d0d0">sidebar</text>
+<text x="823.2 831.6 840.0" y="285.3" fill="#d0d0d0">row</text>
+<text x="856.8 865.2 873.6 882.0" y="285.3" fill="#d0d0d0">onto</text>
+<text x="898.8" y="285.3" fill="#d0d0d0">a</text>
+<text x="915.6 924.0 932.4" y="285.3" fill="#d0d0d0">p│t</text>
+<text x="949.2 957.6" y="285.3" fill="#d0d0d0">-n</text>
+<text x="974.4" y="285.3" fill="#d0d0d0">|</text>
+<text x="991.2" y="285.3" fill="#d0d0d0">t</text>
+<text x="999.6" y="285.3" fill="#e5e5e5">▲</text>
+<text x="67.2" y="302.3" fill="#d0d0d0">│</text>
+<text x="84.0" y="302.3" fill="#e5e510">z</text>
+<text x="176.4 184.8 193.2 201.6" y="302.3" fill="#d0d0d0">zoom</text>
+<text x="218.4 226.8 235.2 243.6" y="302.3" fill="#d0d0d0">pane</text>
+<text x="495.6" y="302.3" fill="#666666">│</text>
+<text x="621.6" y="302.3" fill="#d0d0d0">a</text>
+<text x="638.4 646.8 655.2 663.6 672.0 680.4 688.8" y="302.3" fill="#d0d0d0">sidebar</text>
+<text x="705.6 714.0 722.4" y="302.3" fill="#d0d0d0">tab</text>
+<text x="739.2" y="302.3" fill="#d0d0d0">/</text>
+<text x="756.0 764.4 772.8 781.2 789.6" y="302.3" fill="#d0d0d0">pane,</text>
+<text x="806.4 814.8" y="302.3" fill="#d0d0d0">or</text>
+<text x="831.6" y="302.3" fill="#d0d0d0">+</text>
+<text x="848.4 856.8 865.2 873.6" y="302.3" fill="#d0d0d0">(new</text>
+<text x="890.4 898.8 907.2 915.6 924.0 932.4 940.8" y="302.3" fill="#d0d0d0">tab)│wc</text>
+<text x="957.6 966.0" y="302.3" fill="#d0d0d0">-l</text>
+<text x="982.8 991.2" y="302.3" fill="#d0d0d0">sr</text>
+<text x="999.6" y="302.3" fill="#666666">│</text>
+<text x="67.2" y="319.3" fill="#d0d0d0">│</text>
+<text x="84.0" y="319.3" fill="#e5e510">w</text>
+<text x="176.4 184.8 193.2 201.6" y="319.3" fill="#d0d0d0">wide</text>
+<text x="218.4 226.8 235.2 243.6" y="319.3" fill="#d0d0d0">mode</text>
+<text x="260.4 268.8 277.2 285.6 294.0" y="319.3" fill="#d0d0d0">(1000</text>
+<text x="310.8 319.2 327.6 336.0 344.4 352.8 361.2 369.6" y="319.3" fill="#d0d0d0">columns)</text>
+<text x="495.6" y="319.3" fill="#666666">│</text>
+<text x="604.8 613.2 621.6 630.0 638.4" y="319.3" fill="#d0d0d0">click</text>
+<text x="655.2 663.6 672.0 680.4 688.8 697.2 705.6" y="319.3" fill="#d0d0d0">sidebar</text>
+<text x="722.4 730.8 739.2 747.6" y="319.3" fill="#d0d0d0">pane</text>
+<text x="764.4 772.8" y="319.3" fill="#d0d0d0">to</text>
+<text x="789.6 798.0 806.4 814.8 823.2 831.6" y="319.3" fill="#d0d0d0">focus,</text>
+<text x="848.4 856.8 865.2 873.6 882.0 890.4 898.8 907.2 915.6 924.0 932.4 940.8 949.2" y="319.3" fill="#d0d0d0">dbl-click│ail</text>
+<text x="966.0 974.4" y="319.3" fill="#d0d0d0">-6</text>
+<text x="999.6" y="319.3" fill="#666666">│</text>
+<text x="67.2" y="336.3" fill="#d0d0d0">│</text>
+<text x="84.0" y="336.3" fill="#e5e510">m</text>
+<text x="176.4 184.8 193.2 201.6 210.0 218.4 226.8 235.2 243.6 252.0 260.4 268.8" y="336.3" fill="#d0d0d0">multicursor:</text>
+<text x="285.6 294.0 302.4 310.8" y="336.3" fill="#d0d0d0">type</text>
+<text x="327.6 336.0" y="336.3" fill="#d0d0d0">in</text>
+<text x="352.8 361.2 369.6" y="336.3" fill="#d0d0d0">all</text>
+<text x="386.4 394.8 403.2 411.6 420.0" y="336.3" fill="#d0d0d0">panes</text>
+<text x="436.8 445.2" y="336.3" fill="#d0d0d0">of</text>
+<text x="462.0 470.4 478.8" y="336.3" fill="#d0d0d0">tab</text>
+<text x="495.6" y="336.3" fill="#666666">│</text>
+<text x="604.8 613.2 621.6 630.0" y="336.3" fill="#d0d0d0">drag</text>
+<text x="646.8 655.2" y="336.3" fill="#d0d0d0">to</text>
+<text x="672.0 680.4 688.8 697.2 705.6 714.0 722.4 730.8 739.2 747.6 756.0 764.4" y="336.3" fill="#d0d0d0">select+copy,</text>
+<text x="781.2 789.6 798.0 806.4 814.8 823.2 831.6 840.0 848.4 856.8 865.2 873.6" y="336.3" fill="#d0d0d0">middle-click</text>
+<text x="890.4 898.8 907.2 915.6 924.0 932.4 940.8 949.2" y="336.3" fill="#d0d0d0">past│.rs</text>
+<text x="999.6" y="336.3" fill="#666666">│</text>
+<text x="67.2" y="353.3" fill="#d0d0d0">│</text>
+<text x="84.0" y="353.3" fill="#e5e510">/</text>
+<text x="176.4 184.8 193.2 201.6 210.0 218.4" y="353.3" fill="#d0d0d0">search</text>
+<text x="235.2 243.6 252.0 260.4 268.8 277.2 285.6" y="353.3" fill="#d0d0d0">history</text>
+<text x="302.4 310.8 319.2 327.6 336.0 344.4 352.8 361.2" y="353.3" fill="#d0d0d0">(↑/Enter</text>
+<text x="378.0 386.4 394.8 403.2 411.6 420.0" y="353.3" fill="#d0d0d0">older,</text>
+<text x="436.8" y="353.3" fill="#d0d0d0">↓</text>
+<text x="453.6 462.0 470.4 478.8 487.2" y="353.3" fill="#d0d0d0">newer</text>
+<text x="495.6" y="353.3" fill="#666666">│</text>
+<text x="604.8 613.2 621.6 630.0 638.4 646.8 655.2 663.6 672.0" y="353.3" fill="#d0d0d0">dbl-click</text>
+<text x="688.8 697.2 705.6 714.0 722.4 730.8" y="353.3" fill="#d0d0d0">copies</text>
+<text x="747.6 756.0 764.4 772.8 781.2" y="353.3" fill="#d0d0d0">word,</text>
+<text x="798.0 806.4 814.8 823.2 831.6 840.0 848.4 856.8 865.2 873.6 882.0 890.4" y="353.3" fill="#d0d0d0">triple-click</text>
+<text x="907.2 915.6 924.0" y="353.3" fill="#d0d0d0">li│</text>
+<text x="999.6" y="353.3" fill="#666666">│</text>
+<text x="67.2" y="370.3" fill="#d0d0d0">│</text>
+<text x="84.0" y="370.3" fill="#e5e510">[</text>
+<text x="100.8" y="370.3" fill="#e5e510">/</text>
+<text x="117.6" y="370.3" fill="#e5e510">]</text>
+<text x="176.4 184.8 193.2 201.6 210.0 218.4 226.8 235.2" y="370.3" fill="#d0d0d0">previous</text>
+<text x="252.0" y="370.3" fill="#d0d0d0">/</text>
+<text x="268.8 277.2 285.6 294.0" y="370.3" fill="#d0d0d0">next</text>
+<text x="310.8 319.2 327.6 336.0 344.4 352.8 361.2" y="370.3" fill="#d0d0d0">command</text>
+<text x="378.0 386.4 394.8 403.2 411.6" y="370.3" fill="#d0d0d0">(also</text>
+<text x="428.4 436.8" y="370.3" fill="#d0d0d0">^↑</text>
+<text x="453.6" y="370.3" fill="#d0d0d0">/</text>
+<text x="470.4 478.8 487.2" y="370.3" fill="#d0d0d0">^↓)</text>
+<text x="495.6" y="370.3" fill="#666666">│</text>
+<text x="604.8 613.2 621.6 630.0 638.4 646.8 655.2 663.6 672.0 680.4 688.8" y="370.3" fill="#d0d0d0">shift+mouse</text>
+<text x="705.6 714.0 722.4 730.8 739.2 747.6 756.0 764.4" y="370.3" fill="#d0d0d0">bypasses</text>
+<text x="781.2 789.6 798.0 806.4" y="370.3" fill="#d0d0d0">apps</text>
+<text x="924.0" y="370.3" fill="#d0d0d0">│</text>
+<text x="999.6" y="370.3" fill="#666666">│</text>
+<text x="67.2 75.6 84.0 92.4 100.8 109.2 117.6 126.0 134.4 142.8 151.2 159.6 168.0 176.4 184.8 193.2 201.6 210.0 218.4 226.8 235.2 243.6 252.0 260.4 268.8 277.2 285.6 294.0 302.4 310.8 319.2 327.6 336.0 344.4 352.8 361.2 369.6 378.0 386.4 394.8 403.2 411.6 420.0 428.4 436.8 445.2 453.6 462.0 470.4 478.8 487.2 495.6 504.0 512.4 520.8 529.2 537.6 546.0 554.4 562.8 571.2 579.6 588.0 596.4 604.8 613.2 621.6 630.0 638.4 646.8 655.2 663.6 672.0 680.4 688.8 697.2 705.6 714.0 722.4 730.8 739.2 747.6 756.0 764.4 772.8 781.2 789.6 798.0 806.4 814.8 823.2 831.6 840.0 848.4 856.8 865.2 873.6 882.0 890.4 898.8 907.2 915.6 924.0" y="387.3" fill="#d0d0d0">└─────────────────────────────────────────────────────────────────────────────────────────────────────┘</text>
+<text x="999.6" y="387.3" fill="#666666">│</text>
+<text x="252.0" y="404.3" fill="#666666">│</text>
+<text x="747.6 756.0" y="404.3" fill="#666666">││</text>
+<text x="781.2 789.6 798.0 806.4" y="404.3" fill="#d0d0d0">1622</text>
+<text x="823.2 831.6 840.0 848.4 856.8 865.2 873.6 882.0 890.4 898.8" y="404.3" fill="#d0d0d0">src/app.rs</text>
+<text x="999.6" y="404.3" fill="#666666">│</text>
+<text x="252.0" y="421.3" fill="#666666">│</text>
+<text x="747.6 756.0" y="421.3" fill="#666666">││</text>
+<text x="781.2 789.6 798.0 806.4" y="421.3" fill="#d0d0d0">5419</text>
+<text x="823.2 831.6 840.0 848.4 856.8" y="421.3" fill="#d0d0d0">total</text>
+<text x="999.6" y="421.3" fill="#666666">│</text>
+<text x="252.0" y="438.3" fill="#666666">│</text>
+<text x="747.6 756.0" y="438.3" fill="#666666">││</text>
+<text x="764.4 772.8 781.2 789.6 798.0 806.4 814.8 823.2 831.6" y="438.3" fill="#0dbc79">user@host</text>
+<text x="840.0" y="438.3" fill="#d0d0d0">:</text>
+<text x="848.4 856.8 865.2 873.6 882.0 890.4 898.8 907.2" y="438.3" fill="#2472c8">~/tabmux</text>
+<text x="915.6" y="438.3" fill="#d0d0d0">$</text>
+<text x="999.6" y="438.3" fill="#666666">│</text>
+<text x="252.0" y="455.3" fill="#666666">│</text>
+<text x="747.6 756.0" y="455.3" fill="#666666">││</text>
+<text x="999.6" y="455.3" fill="#666666">│</text>
+<text x="0.0 8.4 16.8 25.2 33.6 42.0" y="472.3" fill="#f5f543">[&lt;][&gt;]</text>
+<text x="58.8 67.2" y="472.3" fill="#666666">^b</text>
+<text x="84.0" y="472.3" fill="#666666">?</text>
+<text x="100.8 109.2 117.6 126.0" y="472.3" fill="#666666">help</text>
+<text x="252.0" y="472.3" fill="#666666">│</text>
+<text x="747.6" y="472.3" fill="#e5e5e5">▼</text>
+<text x="756.0" y="472.3" fill="#666666">│</text>
+<text x="999.6" y="472.3" fill="#e5e5e5">▼</text>
+</svg>

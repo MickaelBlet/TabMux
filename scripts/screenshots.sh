@@ -1,5 +1,5 @@
 #!/bin/sh
-# Regenerate docs/img/screen.svg from a real TabMux session.
+# Regenerate the docs/img/*.svg captures from real TabMux sessions.
 # Runs tabmux inside a detached tmux with a neutral HOME/prompt, captures the
 # screen with colors and renders it to SVG. Requires tmux and python3.
 set -eu
@@ -55,9 +55,28 @@ exec env -i PATH=/usr/local/bin:/usr/bin:/bin HOME="$H" USER=user SHELL=/bin/bas
 EOF
 chmod +x "$WORK/run.sh"
 
-tmux new-session -d -s tabmux-shot -x "$COLS" -y "$ROWS" "$WORK/run.sh"
-sleep 4
 mkdir -p "$ROOT/docs/img"
-tmux capture-pane -t tabmux-shot -e -p |
-  python3 "$ROOT/scripts/ansi2svg.py" "$COLS" "$ROWS" >"$ROOT/docs/img/screen.svg"
-echo "Wrote docs/img/screen.svg"
+
+# shot NAME [KEYS...]: start a fresh session, send each tmux key argument
+# (a pause follows each one), then capture to docs/img/NAME.svg.
+shot() {
+  name=$1
+  shift
+  tmux kill-session -t tabmux-shot 2>/dev/null || true
+  tmux new-session -d -s tabmux-shot -x "$COLS" -y "$ROWS" "$WORK/run.sh"
+  sleep 3
+  for k in "$@"; do
+    tmux send-keys -t tabmux-shot "$k"
+    sleep 0.5
+  done
+  sleep 1
+  tmux capture-pane -t tabmux-shot -e -p |
+    python3 "$ROOT/scripts/ansi2svg.py" "$COLS" "$ROWS" >"$ROOT/docs/img/$name.svg"
+  echo "Wrote docs/img/$name.svg"
+}
+
+shot screen
+shot topbar C-b t
+shot help C-b '?'
+shot search C-b / r s
+shot multicursor C-b m 'echo hello' Enter

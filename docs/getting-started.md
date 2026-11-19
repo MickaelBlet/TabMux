@@ -71,6 +71,8 @@ The tab list is shown either as a **sidebar** on the left (the default) or
 as a **top bar** one row high. `^b t` switches between the two and `^b s`
 hides or shows it.
 
+![Top bar mode: tabs on one row above the panes](img/topbar.svg)
+
 - **Sidebar**: one row per tab. A tab with more than one pane also lists its
   panes, drawn as a tree. Each tab row has a rename button `✎` and a close
   button `×`, and each pane row has a close button `×`. The `[+]` row below

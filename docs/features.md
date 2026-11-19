@@ -42,10 +42,14 @@ the same command on several hosts. Panes other than the focused one show a
 fake cursor, and the title shows `[sync]`. Press `^b m` again to turn it off.
 The status line confirms the change.
 
+![Multicursor: the same command typed in every pane of the tab](img/multicursor.svg)
+
 ## Search
 
 `^b /` (or `[⌕]`) opens a search bar in the focused pane's title row and looks
 through the pane's **whole history** (scrollback and screen):
+
+![Search for "rs": matches highlighted, current one in red, count in the bar](img/search.svg)
 
 - **Smart case**: matching ignores case, unless the query has an uppercase
   letter.

@@ -8,6 +8,8 @@ focused pane, or to every pane of the tab while
 `^b ?` opens the help screen, which lists the same bindings. Press any key or
 click anywhere to close it.
 
+![Help screen opened with ^b ?](img/help.svg)
+
 ## Prefix commands (`^b` then …)
 
 ### Tabs
