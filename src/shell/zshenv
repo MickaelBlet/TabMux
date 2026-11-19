@@ -1,0 +1,9 @@
+# TabMux shell integration for zsh: source the user's .zshenv, then keep
+# ZDOTDIR pointing at TabMux so its .zshrc runs next.
+__tabmux_dir=$ZDOTDIR
+ZDOTDIR=${TABMUX_ZDOTDIR:-$HOME}
+[[ -f $ZDOTDIR/.zshenv ]] && source "$ZDOTDIR/.zshenv"
+# The user's .zshenv may move ZDOTDIR; honor it.
+[[ $ZDOTDIR != ${TABMUX_ZDOTDIR:-$HOME} ]] && TABMUX_ZDOTDIR=$ZDOTDIR
+ZDOTDIR=$__tabmux_dir
+unset __tabmux_dir

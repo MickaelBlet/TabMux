@@ -1,0 +1,40 @@
+# Rust project: editor on the left, build + tests stacked on the right.
+# Relative `cwd` is resolved against this file's directory.
+active = 0
+
+[[tab]]
+name = "code"
+cwd = ".."
+env = { RUST_BACKTRACE = "1" }
+
+[tab.layout]
+split = "vertical"          # children side by side
+
+[[tab.layout.panes]]
+size = 2                    # 2/3 of the width
+command = "${EDITOR:-vi} ."
+focus = true
+
+[[tab.layout.panes]]
+split = "horizontal"        # children stacked
+panes = [
+  { command = "cargo build" },
+  { command = "cargo test", env = { RUST_LOG = "debug" } },
+]
+
+[[tab]]
+name = "git"
+cwd = ".."
+
+[tab.layout]
+command = "git log --oneline --graph -20"
+
+# Extra shells offered by the [⌵] button next to [+].
+[[profile]]
+name = "sh"
+shell = ["/bin/sh"]
+
+[[profile]]
+name = "cargo watch"
+cwd = ".."
+command = "cargo watch -x check"

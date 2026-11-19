@@ -1,0 +1,10 @@
+# TabMux shell integration for bash: loads the user's .bashrc, then emits
+# OSC 133;A before each prompt so TabMux can jump between commands.
+[[ -f ~/.bashrc ]] && source ~/.bashrc
+
+__tabmux_prompt_mark() { printf '\e]133;A\a'; }
+if [[ "$(declare -p PROMPT_COMMAND 2>/dev/null)" == "declare -a"* ]]; then
+    PROMPT_COMMAND+=(__tabmux_prompt_mark)
+else
+    PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND;}__tabmux_prompt_mark"
+fi

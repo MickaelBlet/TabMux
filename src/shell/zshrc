@@ -1,0 +1,9 @@
+# TabMux shell integration for zsh: loads the user's .zshrc, then emits
+# OSC 133;A before each prompt so TabMux can jump between commands.
+ZDOTDIR=${TABMUX_ZDOTDIR:-$HOME}
+unset TABMUX_ZDOTDIR
+[[ -f $ZDOTDIR/.zshrc ]] && source "$ZDOTDIR/.zshrc"
+
+__tabmux_prompt_mark() { print -n '\e]133;A\a' }
+autoload -Uz add-zsh-hook
+add-zsh-hook precmd __tabmux_prompt_mark

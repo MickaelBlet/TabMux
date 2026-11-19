@@ -1,0 +1,36 @@
+# Full-stack web app: one tab per service, plus a shared logs tab.
+active = 1
+
+[[tab]]
+name = "backend"
+cwd = "~/projects/app/backend"
+env = { PORT = "8080", APP_ENV = "dev" }
+
+[tab.layout]
+split = "horizontal"
+
+[[tab.layout.panes]]
+size = 3
+command = "npm run dev"
+
+[[tab.layout.panes]]
+focus = true
+
+[[tab]]
+name = "frontend"
+cwd = "~/projects/app/frontend"
+env = { VITE_API_URL = "http://localhost:8080" }
+
+[tab.layout]
+split = "vertical"
+panes = [
+  { command = "npm run dev", size = 1 },
+  { command = "npm run test -- --watch", size = 1 },
+  { focus = true, size = 2 },
+]
+
+[[tab]]
+name = "db"
+
+[tab.layout]
+command = "psql -h localhost -U postgres"

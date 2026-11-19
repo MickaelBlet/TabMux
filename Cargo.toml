@@ -1,0 +1,15 @@
+[package]
+name = "tabmux"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.104"
+base64 = "0.23.1"
+crossterm = "0.29"
+portable-pty = "0.8"
+ratatui = "0.30"
+serde = { version = "1.0.229", features = ["derive"] }
+toml = "1.2.1"
+tui-term = "0.3.4"
+vt100 = "0.16"

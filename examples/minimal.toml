@@ -1,0 +1,6 @@
+# Two plain shells, one tab each.
+[[tab]]
+name = "main"
+
+[[tab]]
+name = "scratch"
