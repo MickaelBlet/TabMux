@@ -17,6 +17,8 @@ const SIDEBAR_BG: Color = Color::Indexed(234);
 const LINE_IDLE: Color = Color::DarkGray;
 const LINE_ACTIVE: Color = Color::Yellow;
 const ZOOM_FG: Color = Color::Green;
+/// Separators, sidebar border and [▤] button of a tab in multicursor mode.
+const SYNC_FG: Color = Color::Magenta;
 /// Uniform background of the prompt reached with ^↑ / ^↓.
 const HIGHLIGHT_BG: Color = Color::Indexed(24);
 /// Area where a dragged pane will land.
@@ -76,11 +78,17 @@ pub fn draw(f: &mut Frame, app: &App) {
     draw_status(f, app);
     if let Some(b) = v.border {
         let active = app.drag == Drag::Sidebar || hovered(b);
-        let zoomed = app.tabs.get(app.active).is_some_and(|t| t.zoom.is_some());
-        let fg = match (active, zoomed) {
-            (true, _) => LINE_ACTIVE,
-            (false, true) => ZOOM_FG,
-            (false, false) => LINE_IDLE,
+        let tab = app.tabs.get(app.active);
+        let zoomed = tab.is_some_and(|t| t.zoom.is_some());
+        let sync = tab.is_some_and(|t| t.sync);
+        let fg = if active {
+            LINE_ACTIVE
+        } else if sync {
+            SYNC_FG
+        } else if zoomed {
+            ZOOM_FG
+        } else {
+            LINE_IDLE
         };
         fill(f, b, "│", Style::default().fg(fg));
     }
@@ -251,6 +259,7 @@ pub fn draw(f: &mut Frame, app: &App) {
         }
     }
 
+    let sync = tab.is_some_and(|t| t.sync);
     for s in &v.seps {
         let active = app.drag == Drag::Split(s.path.clone()) || hovered(s.rect);
         let sym = match s.dir {
@@ -261,7 +270,11 @@ pub fn draw(f: &mut Frame, app: &App) {
             f,
             s.rect,
             sym,
-            Style::default().fg(if active { LINE_ACTIVE } else { LINE_IDLE }),
+            Style::default().fg(match (active, sync) {
+                (true, _) => LINE_ACTIVE,
+                (false, true) => SYNC_FG,
+                (false, false) => LINE_IDLE,
+            }),
         );
     }
 
@@ -293,6 +306,7 @@ pub fn draw(f: &mut Frame, app: &App) {
                 Target::Zoom(id) if app.tabs.iter().any(|t| t.zoom == Some(id)) => {
                     Style::default().fg(ZOOM_FG)
                 }
+                Target::Sync(_) if sync => Style::default().fg(SYNC_FG),
                 _ => Style::default().fg(Color::LightYellow),
             }
         };

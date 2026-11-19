@@ -39,8 +39,9 @@ Turning wide mode off resizes the PTY back to the pane's width.
 `^b m` (`[≡]` → `[▤]`) turns on multicursor for the **current tab**. Every key
 and paste goes to all panes of the tab at once, which is handy for running
 the same command on several hosts. Panes other than the focused one show a
-fake cursor, and the title shows `[sync]`. Press `^b m` again to turn it off.
-The status line confirms the change.
+fake cursor, the title shows `[sync]`, and pane separators and the sidebar
+border turn purple (as does the `[▤]` button). Press `^b m` again to turn it
+off. The status line confirms the change.
 
 ![Multicursor: the same command typed in every pane of the tab](img/multicursor.svg)
 
