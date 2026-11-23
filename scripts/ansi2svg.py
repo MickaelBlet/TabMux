@@ -10,10 +10,13 @@ from html import escape
 
 CELL_W, CELL_H, FONT = 8.4, 17, 14
 DEF_FG, DEF_BG = "#d0d0d0", "#1c1c1c"
+# Nerd Font (Powerline) rounded caps, drawn as shapes so no font is needed.
+LEFT_CAP, RIGHT_CAP = "\ue0b6", "\ue0b4"
 BASE16 = [
     "#000000", "#cd3131", "#0dbc79", "#e5e510", "#2472c8", "#bc3fbc", "#11a8cd", "#e5e5e5",
     "#666666", "#f14c4c", "#23d18b", "#f5f543", "#3b8eea", "#d670d6", "#29b8db", "#ffffff",
 ]
+BLANK = (" ", LEFT_CAP, RIGHT_CAP)
 
 
 def xterm256(n):
@@ -115,6 +118,19 @@ def render(grid, cols, rows):
                     f'width="{(end - x) * CELL_W + 0.3:.1f}" height="{CELL_H + 0.3}" fill="{bg}"/>'
                 )
             x = end
+    # Powerline caps: half ellipses with the flat side toward the pill.
+    for y, row in enumerate(grid):
+        for x, cell in enumerate(row):
+            ch, fg = cell[0], cell[1]
+            if ch not in (LEFT_CAP, RIGHT_CAP):
+                continue
+            edge = (x + 1) * CELL_W if ch == LEFT_CAP else x * CELL_W
+            sweep = 0 if ch == LEFT_CAP else 1
+            top, bot = y * CELL_H, (y + 1) * CELL_H
+            out.append(
+                f'<path d="M{edge:.1f},{top} A{CELL_W:.1f},{CELL_H / 2} 0 0 {sweep} '
+                f'{edge:.1f},{bot} Z" fill="{fg}"/>'
+            )
     # Space-free glyph runs of one style. The per-glyph x list keeps
     # box-drawing aligned with any font; splitting at spaces keeps renderers
     # that ignore x lists close enough.
@@ -122,12 +138,12 @@ def render(grid, cols, rows):
         base = y * CELL_H + CELL_H * 0.78
         x = 0
         while x < cols:
-            if row[x][0] == " ":
+            if row[x][0] in BLANK:
                 x += 1
                 continue
             style = row[x][1:2] + row[x][3:]
             end = x
-            while end < cols and row[end][0] != " " and row[end][1:2] + row[end][3:] == style:
+            while end < cols and row[end][0] not in BLANK and row[end][1:2] + row[end][3:] == style:
                 end += 1
             fg, bold, ital, ul = style
             attrs = f'fill="{fg}"'

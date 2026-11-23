@@ -26,13 +26,14 @@ cargo install --path .
 ## Command line
 
 ```text
-tabmux [-w|--workspace <file.toml>]
+tabmux [-w|--workspace <file.toml>] [--nerd-font]
 tabmux -h|--help
 ```
 
 | Option                   | Description                                                   |
 | ------------------------ | ------------------------------------------------------------- |
 | `-w`, `--workspace FILE` | Load tabs, layouts and commands from a [workspace file](workspace.md). |
+| `--nerd-font`            | Draw `[x]` buttons as rounded pills (needs a [Nerd Font](https://www.nerdfonts.com/)). Also enabled by `TABMUX_NERD_FONT=1`. |
 | `-h`, `--help`           | Print usage and exit.                                         |
 
 Without `-w`, TabMux opens one tab running a plain shell. If the workspace

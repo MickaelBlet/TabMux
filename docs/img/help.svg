@@ -1,37 +1,144 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1008 476" width="1008" height="476" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14">
 <rect width="100%" height="100%" fill="#1c1c1c"/>
-<rect x="260.4" y="0" width="495.9" height="17.3" fill="#2472c8"/>
-<rect x="764.4" y="0" width="243.9" height="17.3" fill="#303030"/>
+<rect x="184.8" y="0" width="8.7" height="17.3" fill="#444444"/>
+<rect x="210.0" y="0" width="8.7" height="17.3" fill="#444444"/>
+<rect x="235.2" y="0" width="8.7" height="17.3" fill="#444444"/>
+<rect x="260.4" y="0" width="327.9" height="17.3" fill="#2472c8"/>
+<rect x="588.0" y="0" width="8.7" height="17.3" fill="#444444"/>
+<rect x="596.4" y="0" width="17.1" height="17.3" fill="#2472c8"/>
+<rect x="613.2" y="0" width="8.7" height="17.3" fill="#444444"/>
+<rect x="621.6" y="0" width="17.1" height="17.3" fill="#2472c8"/>
+<rect x="638.4" y="0" width="8.7" height="17.3" fill="#444444"/>
+<rect x="646.8" y="0" width="17.1" height="17.3" fill="#2472c8"/>
+<rect x="663.6" y="0" width="8.7" height="17.3" fill="#444444"/>
+<rect x="672.0" y="0" width="17.1" height="17.3" fill="#2472c8"/>
+<rect x="688.8" y="0" width="8.7" height="17.3" fill="#444444"/>
+<rect x="697.2" y="0" width="17.1" height="17.3" fill="#2472c8"/>
+<rect x="714.0" y="0" width="8.7" height="17.3" fill="#444444"/>
+<rect x="722.4" y="0" width="17.1" height="17.3" fill="#2472c8"/>
+<rect x="739.2" y="0" width="8.7" height="17.3" fill="#444444"/>
+<rect x="747.6" y="0" width="8.7" height="17.3" fill="#2472c8"/>
+<rect x="764.4" y="0" width="75.9" height="17.3" fill="#303030"/>
+<rect x="840.0" y="0" width="8.7" height="17.3" fill="#444444"/>
+<rect x="848.4" y="0" width="17.1" height="17.3" fill="#303030"/>
+<rect x="865.2" y="0" width="8.7" height="17.3" fill="#444444"/>
+<rect x="873.6" y="0" width="17.1" height="17.3" fill="#303030"/>
+<rect x="890.4" y="0" width="8.7" height="17.3" fill="#444444"/>
+<rect x="898.8" y="0" width="17.1" height="17.3" fill="#303030"/>
+<rect x="915.6" y="0" width="8.7" height="17.3" fill="#444444"/>
+<rect x="924.0" y="0" width="17.1" height="17.3" fill="#303030"/>
+<rect x="940.8" y="0" width="8.7" height="17.3" fill="#444444"/>
+<rect x="949.2" y="0" width="17.1" height="17.3" fill="#303030"/>
+<rect x="966.0" y="0" width="8.7" height="17.3" fill="#444444"/>
+<rect x="974.4" y="0" width="17.1" height="17.3" fill="#303030"/>
+<rect x="991.2" y="0" width="8.7" height="17.3" fill="#444444"/>
+<rect x="999.6" y="0" width="8.7" height="17.3" fill="#303030"/>
+<rect x="184.8" y="17" width="8.7" height="17.3" fill="#444444"/>
+<rect x="210.0" y="17" width="8.7" height="17.3" fill="#444444"/>
+<rect x="235.2" y="17" width="8.7" height="17.3" fill="#444444"/>
 <rect x="0.0" y="34" width="252.3" height="17.3" fill="#303030"/>
 <rect x="0.0" y="51" width="252.3" height="17.3" fill="#2472c8"/>
-<rect x="932.4" y="255" width="75.9" height="17.3" fill="#303030"/>
+<rect x="8.4" y="119" width="59.1" height="17.3" fill="#444444"/>
+<rect x="932.4" y="255" width="8.7" height="17.3" fill="#303030"/>
+<rect x="940.8" y="255" width="8.7" height="17.3" fill="#444444"/>
+<rect x="949.2" y="255" width="17.1" height="17.3" fill="#303030"/>
+<rect x="966.0" y="255" width="8.7" height="17.3" fill="#444444"/>
+<rect x="974.4" y="255" width="17.1" height="17.3" fill="#303030"/>
+<rect x="991.2" y="255" width="8.7" height="17.3" fill="#444444"/>
+<rect x="999.6" y="255" width="8.7" height="17.3" fill="#303030"/>
+<rect x="8.4" y="459" width="8.7" height="17.3" fill="#444444"/>
+<rect x="33.6" y="459" width="8.7" height="17.3" fill="#444444"/>
+<path d="M184.8,0 A8.4,8.5 0 0 0 184.8,17 Z" fill="#444444"/>
+<path d="M193.2,0 A8.4,8.5 0 0 1 193.2,17 Z" fill="#444444"/>
+<path d="M210.0,0 A8.4,8.5 0 0 0 210.0,17 Z" fill="#444444"/>
+<path d="M218.4,0 A8.4,8.5 0 0 1 218.4,17 Z" fill="#444444"/>
+<path d="M235.2,0 A8.4,8.5 0 0 0 235.2,17 Z" fill="#444444"/>
+<path d="M243.6,0 A8.4,8.5 0 0 1 243.6,17 Z" fill="#444444"/>
+<path d="M588.0,0 A8.4,8.5 0 0 0 588.0,17 Z" fill="#444444"/>
+<path d="M596.4,0 A8.4,8.5 0 0 1 596.4,17 Z" fill="#444444"/>
+<path d="M613.2,0 A8.4,8.5 0 0 0 613.2,17 Z" fill="#444444"/>
+<path d="M621.6,0 A8.4,8.5 0 0 1 621.6,17 Z" fill="#444444"/>
+<path d="M638.4,0 A8.4,8.5 0 0 0 638.4,17 Z" fill="#444444"/>
+<path d="M646.8,0 A8.4,8.5 0 0 1 646.8,17 Z" fill="#444444"/>
+<path d="M663.6,0 A8.4,8.5 0 0 0 663.6,17 Z" fill="#444444"/>
+<path d="M672.0,0 A8.4,8.5 0 0 1 672.0,17 Z" fill="#444444"/>
+<path d="M688.8,0 A8.4,8.5 0 0 0 688.8,17 Z" fill="#444444"/>
+<path d="M697.2,0 A8.4,8.5 0 0 1 697.2,17 Z" fill="#444444"/>
+<path d="M714.0,0 A8.4,8.5 0 0 0 714.0,17 Z" fill="#444444"/>
+<path d="M722.4,0 A8.4,8.5 0 0 1 722.4,17 Z" fill="#444444"/>
+<path d="M739.2,0 A8.4,8.5 0 0 0 739.2,17 Z" fill="#444444"/>
+<path d="M747.6,0 A8.4,8.5 0 0 1 747.6,17 Z" fill="#444444"/>
+<path d="M840.0,0 A8.4,8.5 0 0 0 840.0,17 Z" fill="#444444"/>
+<path d="M848.4,0 A8.4,8.5 0 0 1 848.4,17 Z" fill="#444444"/>
+<path d="M865.2,0 A8.4,8.5 0 0 0 865.2,17 Z" fill="#444444"/>
+<path d="M873.6,0 A8.4,8.5 0 0 1 873.6,17 Z" fill="#444444"/>
+<path d="M890.4,0 A8.4,8.5 0 0 0 890.4,17 Z" fill="#444444"/>
+<path d="M898.8,0 A8.4,8.5 0 0 1 898.8,17 Z" fill="#444444"/>
+<path d="M915.6,0 A8.4,8.5 0 0 0 915.6,17 Z" fill="#444444"/>
+<path d="M924.0,0 A8.4,8.5 0 0 1 924.0,17 Z" fill="#444444"/>
+<path d="M940.8,0 A8.4,8.5 0 0 0 940.8,17 Z" fill="#444444"/>
+<path d="M949.2,0 A8.4,8.5 0 0 1 949.2,17 Z" fill="#444444"/>
+<path d="M966.0,0 A8.4,8.5 0 0 0 966.0,17 Z" fill="#444444"/>
+<path d="M974.4,0 A8.4,8.5 0 0 1 974.4,17 Z" fill="#444444"/>
+<path d="M991.2,0 A8.4,8.5 0 0 0 991.2,17 Z" fill="#444444"/>
+<path d="M999.6,0 A8.4,8.5 0 0 1 999.6,17 Z" fill="#444444"/>
+<path d="M184.8,17 A8.4,8.5 0 0 0 184.8,34 Z" fill="#444444"/>
+<path d="M193.2,17 A8.4,8.5 0 0 1 193.2,34 Z" fill="#444444"/>
+<path d="M210.0,17 A8.4,8.5 0 0 0 210.0,34 Z" fill="#444444"/>
+<path d="M218.4,17 A8.4,8.5 0 0 1 218.4,34 Z" fill="#444444"/>
+<path d="M235.2,17 A8.4,8.5 0 0 0 235.2,34 Z" fill="#444444"/>
+<path d="M243.6,17 A8.4,8.5 0 0 1 243.6,34 Z" fill="#444444"/>
+<path d="M8.4,119 A8.4,8.5 0 0 0 8.4,136 Z" fill="#444444"/>
+<path d="M940.8,255 A8.4,8.5 0 0 0 940.8,272 Z" fill="#444444"/>
+<path d="M949.2,255 A8.4,8.5 0 0 1 949.2,272 Z" fill="#444444"/>
+<path d="M966.0,255 A8.4,8.5 0 0 0 966.0,272 Z" fill="#444444"/>
+<path d="M974.4,255 A8.4,8.5 0 0 1 974.4,272 Z" fill="#444444"/>
+<path d="M991.2,255 A8.4,8.5 0 0 0 991.2,272 Z" fill="#444444"/>
+<path d="M999.6,255 A8.4,8.5 0 0 1 999.6,272 Z" fill="#444444"/>
+<path d="M8.4,459 A8.4,8.5 0 0 0 8.4,476 Z" fill="#444444"/>
+<path d="M16.8,459 A8.4,8.5 0 0 1 16.8,476 Z" fill="#444444"/>
+<path d="M33.6,459 A8.4,8.5 0 0 0 33.6,476 Z" fill="#444444"/>
+<path d="M42.0,459 A8.4,8.5 0 0 1 42.0,476 Z" fill="#444444"/>
 <text x="8.4 16.8 25.2 33.6 42.0" y="13.3" fill="#11a8cd" font-weight="bold">⢹⠁⢀⡀⣇</text>
 <text x="58.8 67.2 75.6 84.0 92.4 100.8 109.2" y="13.3" fill="#11a8cd" font-weight="bold">⡗⠔⡇⡀⡀⡀⡀</text>
-<text x="176.4 184.8 193.2 201.6 210.0 218.4" y="13.3" fill="#f5f543">[▔][◀]</text>
-<text x="226.8 235.2 243.6" y="13.3" fill="#f14c4c">[✕]</text>
+<text x="184.8" y="13.3" fill="#f5f543">▔</text>
+<text x="210.0" y="13.3" fill="#f5f543">◀</text>
+<text x="235.2" y="13.3" fill="#f14c4c">✕</text>
 <text x="252.0" y="13.3" fill="#666666">│</text>
 <text x="268.8 277.2 285.6 294.0 302.4 310.8 319.2 327.6" y="13.3" fill="#ffffff" font-weight="bold">~/tabmux</text>
-<text x="579.6 588.0 596.4 604.8 613.2 621.6 630.0 638.4 646.8 655.2 663.6 672.0 680.4 688.8 697.2 705.6 714.0 722.4" y="13.3" fill="#f5f543" font-weight="bold">[□][│][─][↔][≡][⌕]</text>
-<text x="730.8 739.2 747.6" y="13.3" fill="#f14c4c" font-weight="bold">[✕]</text>
-<text x="756.0" y="13.3" fill="#666666">│</text>
+<text x="588.0" y="13.3" fill="#f5f543" font-weight="bold">□</text>
+<text x="613.2" y="13.3" fill="#f5f543" font-weight="bold">│</text>
+<text x="638.4" y="13.3" fill="#f5f543" font-weight="bold">─</text>
+<text x="663.6" y="13.3" fill="#f5f543" font-weight="bold">↔</text>
+<text x="688.8" y="13.3" fill="#f5f543" font-weight="bold">≡</text>
+<text x="714.0" y="13.3" fill="#f5f543" font-weight="bold">⌕</text>
+<text x="739.2" y="13.3" fill="#f14c4c" font-weight="bold">✕</text>
+<text x="756.0" y="13.3" fill="#3b8eea">│</text>
 <text x="772.8 781.2 789.6 798.0 806.4 814.8 823.2" y="13.3" fill="#e5e5e5">~/tabmu</text>
-<text x="831.6 840.0 848.4 856.8 865.2 873.6 882.0 890.4 898.8 907.2 915.6 924.0 932.4 940.8 949.2 957.6 966.0 974.4" y="13.3" fill="#f5f543">[□][│][─][↔][≡][⌕]</text>
-<text x="982.8 991.2 999.6" y="13.3" fill="#f14c4c">[✕]</text>
+<text x="840.0" y="13.3" fill="#f5f543">□</text>
+<text x="865.2" y="13.3" fill="#f5f543">│</text>
+<text x="890.4" y="13.3" fill="#f5f543">─</text>
+<text x="915.6" y="13.3" fill="#f5f543">↔</text>
+<text x="940.8" y="13.3" fill="#f5f543">≡</text>
+<text x="966.0" y="13.3" fill="#f5f543">⌕</text>
+<text x="991.2" y="13.3" fill="#f14c4c">✕</text>
 <text x="8.4" y="30.3" fill="#11a8cd" font-weight="bold">⠸</text>
 <text x="25.2 33.6 42.0 50.4 58.8" y="30.3" fill="#11a8cd" font-weight="bold">⠣⠇⠧⠃⠇</text>
 <text x="75.6 84.0 92.4 100.8 109.2" y="30.3" fill="#11a8cd" font-weight="bold">⠇⠣⠇⠜⠄</text>
-<text x="176.4 184.8 193.2 201.6 210.0 218.4 226.8 235.2 243.6" y="30.3" fill="#f5f543">[+][?][▭]</text>
+<text x="184.8" y="30.3" fill="#f5f543">+</text>
+<text x="210.0" y="30.3" fill="#f5f543">?</text>
+<text x="235.2" y="30.3" fill="#f5f543">▭</text>
 <text x="252.0" y="30.3" fill="#666666">│</text>
 <text x="260.4 268.8" y="30.3" fill="#d0d0d0">ls</text>
 <text x="285.6 294.0 302.4" y="30.3" fill="#d0d0d0">src</text>
-<text x="747.6" y="30.3" fill="#e5e5e5">▲</text>
-<text x="756.0" y="30.3" fill="#666666">│</text>
-<text x="764.4 772.8 781.2 789.6 798.0 806.4 814.8 823.2 831.6" y="30.3" fill="#0dbc79">user@host</text>
-<text x="840.0" y="30.3" fill="#d0d0d0">:</text>
-<text x="848.4 856.8 865.2 873.6 882.0 890.4 898.8 907.2" y="30.3" fill="#2472c8">~/tabmux</text>
-<text x="915.6" y="30.3" fill="#d0d0d0">$</text>
-<text x="932.4 940.8 949.2" y="30.3" fill="#d0d0d0">git</text>
-<text x="966.0 974.4 982.8" y="30.3" fill="#d0d0d0">log</text>
+<text x="747.6 756.0" y="30.3" fill="#3b8eea">▲│</text>
+<text x="764.4 772.8 781.2 789.6 798.0 806.4 814.8" y="30.3" fill="#e5e510">9088133</text>
+<text x="831.6" y="30.3" fill="#e5e510">(</text>
+<text x="840.0 848.4 856.8 865.2" y="30.3" fill="#11a8cd" font-weight="bold">HEAD</text>
+<text x="882.0 890.4" y="30.3" fill="#11a8cd" font-weight="bold">-&gt;</text>
+<text x="907.2 915.6 924.0 932.4" y="30.3" fill="#0dbc79" font-weight="bold">main</text>
+<text x="940.8" y="30.3" fill="#e5e510">,</text>
+<text x="957.6 966.0 974.4 982.8 991.2" y="30.3" fill="#cd3131" font-weight="bold">origi</text>
 <text x="999.6" y="30.3" fill="#e5e5e5">▲</text>
 <text x="8.4" y="47.3" fill="#ffffff" font-weight="bold">1</text>
 <text x="25.2 33.6 42.0 50.4" y="47.3" fill="#ffffff" font-weight="bold">code</text>
@@ -44,9 +151,12 @@
 <text x="411.6" y="47.3" fill="#d0d0d0">$</text>
 <text x="428.4 436.8" y="47.3" fill="#d0d0d0">ls</text>
 <text x="453.6 462.0 470.4" y="47.3" fill="#d0d0d0">src</text>
-<text x="747.6 756.0" y="47.3" fill="#666666">││</text>
-<text x="764.4 772.8 781.2 789.6 798.0 806.4 814.8 823.2 831.6" y="47.3" fill="#d0d0d0">--oneline</text>
-<text x="848.4 856.8" y="47.3" fill="#d0d0d0">-5</text>
+<text x="747.6 756.0" y="47.3" fill="#3b8eea">││</text>
+<text x="764.4 772.8 781.2 789.6 798.0 806.4" y="47.3" fill="#cd3131" font-weight="bold">n/main</text>
+<text x="814.8" y="47.3" fill="#e5e510">)</text>
+<text x="831.6 840.0 848.4 856.8 865.2 873.6 882.0 890.4 898.8 907.2" y="47.3" fill="#d0d0d0">Regenerate</text>
+<text x="924.0 932.4" y="47.3" fill="#d0d0d0">UI</text>
+<text x="949.2 957.6 966.0 974.4 982.8 991.2" y="47.3" fill="#d0d0d0">captur</text>
 <text x="999.6" y="47.3" fill="#666666">│</text>
 <text x="8.4" y="64.3" fill="#ffffff" font-weight="bold">├</text>
 <text x="25.2 33.6 42.0 50.4 58.8 67.2 75.6 84.0" y="64.3" fill="#ffffff" font-weight="bold">~/tabmux</text>
@@ -56,15 +166,9 @@
 <text x="352.8 361.2 369.6 378.0 386.4 394.8 403.2" y="64.3" fill="#d0d0d0">main.rs</text>
 <text x="436.8 445.2 453.6 462.0 470.4 478.8 487.2 495.6 504.0" y="64.3" fill="#d0d0d0">search.rs</text>
 <text x="554.4 562.8 571.2 579.6 588.0 596.4" y="64.3" fill="#d0d0d0">tab.rs</text>
-<text x="747.6 756.0" y="64.3" fill="#666666">││</text>
-<text x="764.4 772.8 781.2 789.6 798.0 806.4 814.8" y="64.3" fill="#e5e510">bdf9a5f</text>
-<text x="831.6" y="64.3" fill="#e5e510">(</text>
-<text x="840.0 848.4 856.8 865.2" y="64.3" fill="#11a8cd" font-weight="bold">HEAD</text>
-<text x="882.0 890.4" y="64.3" fill="#11a8cd" font-weight="bold">-&gt;</text>
-<text x="907.2 915.6 924.0 932.4" y="64.3" fill="#0dbc79" font-weight="bold">main</text>
-<text x="940.8" y="64.3" fill="#e5e510">,</text>
-<text x="957.6 966.0 974.4 982.8 991.2" y="64.3" fill="#cd3131" font-weight="bold">origi</text>
-<text x="999.6" y="64.3" fill="#e5e5e5">█</text>
+<text x="747.6 756.0" y="64.3" fill="#3b8eea">││</text>
+<text x="764.4 772.8" y="64.3" fill="#d0d0d0">es</text>
+<text x="999.6" y="64.3" fill="#666666">│</text>
 <text x="8.4" y="81.3" fill="#e5e5e5">├</text>
 <text x="25.2 33.6 42.0 50.4 58.8 67.2 75.6 84.0" y="81.3" fill="#e5e5e5">~/tabmux</text>
 <text x="235.2" y="81.3" fill="#f14c4c">×</text>
@@ -73,9 +177,8 @@
 <text x="352.8 361.2 369.6 378.0 386.4 394.8 403.2 411.6" y="81.3" fill="#d0d0d0">marks.rs</text>
 <text x="436.8 445.2 453.6 462.0 470.4 478.8 487.2 495.6 504.0 512.4 520.8 529.2" y="81.3" fill="#d0d0d0">selection.rs</text>
 <text x="554.4 562.8 571.2 579.6 588.0" y="81.3" fill="#d0d0d0">ui.rs</text>
-<text x="747.6 756.0" y="81.3" fill="#666666">││</text>
-<text x="764.4 772.8 781.2 789.6 798.0 806.4" y="81.3" fill="#cd3131" font-weight="bold">n/main</text>
-<text x="814.8" y="81.3" fill="#e5e510">)</text>
+<text x="747.6 756.0" y="81.3" fill="#3b8eea">││</text>
+<text x="764.4 772.8 781.2 789.6 798.0 806.4 814.8" y="81.3" fill="#e5e510">bdf9a5f</text>
 <text x="831.6 840.0 848.4 856.8 865.2" y="81.3" fill="#d0d0d0">Color</text>
 <text x="882.0 890.4 898.8 907.2 915.6 924.0 932.4 940.8 949.2 957.6 966.0" y="81.3" fill="#d0d0d0">multicursor</text>
 <text x="982.8 991.2" y="81.3" fill="#d0d0d0">se</text>
@@ -106,7 +209,6 @@
 <text x="966.0 974.4" y="115.3" fill="#d0d0d0">to</text>
 <text x="991.2" y="115.3" fill="#d0d0d0">R</text>
 <text x="999.6" y="115.3" fill="#e5e5e5">█</text>
-<text x="0.0" y="132.3" fill="#f5f543">[</text>
 <text x="67.2" y="132.3" fill="#d0d0d0">│</text>
 <text x="84.0" y="132.3" fill="#e5e510">&amp;</text>
 <text x="176.4 184.8 193.2 201.6 210.0" y="132.3" fill="#d0d0d0">close</text>
@@ -240,8 +342,9 @@
 <text x="714.0 722.4 730.8 739.2 747.6 756.0 764.4 772.8" y="268.3" fill="#d0d0d0">reorder,</text>
 <text x="789.6 798.0 806.4 814.8 823.2 831.6 840.0 848.4 856.8" y="268.3" fill="#d0d0d0">dbl-click</text>
 <text x="873.6 882.0 890.4 898.8 907.2 915.6 924.0" y="268.3" fill="#d0d0d0">rename│</text>
-<text x="932.4 940.8 949.2 957.6 966.0 974.4" y="268.3" fill="#f5f543">[≡][⌕]</text>
-<text x="982.8 991.2 999.6" y="268.3" fill="#f14c4c">[✕]</text>
+<text x="940.8" y="268.3" fill="#f5f543">≡</text>
+<text x="966.0" y="268.3" fill="#f5f543">⌕</text>
+<text x="991.2" y="268.3" fill="#f14c4c">✕</text>
 <text x="67.2" y="285.3" fill="#d0d0d0">│</text>
 <text x="84.0 92.4 100.8 109.2" y="285.3" fill="#e5e510">←↑↓→</text>
 <text x="126.0 134.4 142.8 151.2" y="285.3" fill="#e5e510">hjkl</text>
@@ -347,31 +450,31 @@
 <text x="67.2 75.6 84.0 92.4 100.8 109.2 117.6 126.0 134.4 142.8 151.2 159.6 168.0 176.4 184.8 193.2 201.6 210.0 218.4 226.8 235.2 243.6 252.0 260.4 268.8 277.2 285.6 294.0 302.4 310.8 319.2 327.6 336.0 344.4 352.8 361.2 369.6 378.0 386.4 394.8 403.2 411.6 420.0 428.4 436.8 445.2 453.6 462.0 470.4 478.8 487.2 495.6 504.0 512.4 520.8 529.2 537.6 546.0 554.4 562.8 571.2 579.6 588.0 596.4 604.8 613.2 621.6 630.0 638.4 646.8 655.2 663.6 672.0 680.4 688.8 697.2 705.6 714.0 722.4 730.8 739.2 747.6 756.0 764.4 772.8 781.2 789.6 798.0 806.4 814.8 823.2 831.6 840.0 848.4 856.8 865.2 873.6 882.0 890.4 898.8 907.2 915.6 924.0" y="387.3" fill="#d0d0d0">└─────────────────────────────────────────────────────────────────────────────────────────────────────┘</text>
 <text x="999.6" y="387.3" fill="#666666">│</text>
 <text x="252.0" y="404.3" fill="#666666">│</text>
-<text x="747.6 756.0" y="404.3" fill="#666666">││</text>
-<text x="781.2 789.6 798.0 806.4" y="404.3" fill="#d0d0d0">1622</text>
+<text x="747.6 756.0" y="404.3" fill="#3b8eea">││</text>
+<text x="781.2 789.6 798.0 806.4" y="404.3" fill="#d0d0d0">1625</text>
 <text x="823.2 831.6 840.0 848.4 856.8 865.2 873.6 882.0 890.4 898.8" y="404.3" fill="#d0d0d0">src/app.rs</text>
 <text x="999.6" y="404.3" fill="#666666">│</text>
 <text x="252.0" y="421.3" fill="#666666">│</text>
-<text x="747.6 756.0" y="421.3" fill="#666666">││</text>
-<text x="781.2 789.6 798.0 806.4" y="421.3" fill="#d0d0d0">5433</text>
+<text x="747.6 756.0" y="421.3" fill="#3b8eea">││</text>
+<text x="781.2 789.6 798.0 806.4" y="421.3" fill="#d0d0d0">5548</text>
 <text x="823.2 831.6 840.0 848.4 856.8" y="421.3" fill="#d0d0d0">total</text>
 <text x="999.6" y="421.3" fill="#666666">│</text>
 <text x="252.0" y="438.3" fill="#666666">│</text>
-<text x="747.6 756.0" y="438.3" fill="#666666">││</text>
+<text x="747.6 756.0" y="438.3" fill="#3b8eea">││</text>
 <text x="764.4 772.8 781.2 789.6 798.0 806.4 814.8 823.2 831.6" y="438.3" fill="#0dbc79">user@host</text>
 <text x="840.0" y="438.3" fill="#d0d0d0">:</text>
 <text x="848.4 856.8 865.2 873.6 882.0 890.4 898.8 907.2" y="438.3" fill="#2472c8">~/tabmux</text>
 <text x="915.6" y="438.3" fill="#d0d0d0">$</text>
 <text x="999.6" y="438.3" fill="#666666">│</text>
 <text x="252.0" y="455.3" fill="#666666">│</text>
-<text x="747.6 756.0" y="455.3" fill="#666666">││</text>
+<text x="747.6 756.0" y="455.3" fill="#3b8eea">││</text>
 <text x="999.6" y="455.3" fill="#666666">│</text>
-<text x="0.0 8.4 16.8 25.2 33.6 42.0" y="472.3" fill="#f5f543">[&lt;][&gt;]</text>
+<text x="8.4" y="472.3" fill="#f5f543">&lt;</text>
+<text x="33.6" y="472.3" fill="#f5f543">&gt;</text>
 <text x="58.8 67.2" y="472.3" fill="#666666">^b</text>
 <text x="84.0" y="472.3" fill="#666666">?</text>
 <text x="100.8 109.2 117.6 126.0" y="472.3" fill="#666666">help</text>
 <text x="252.0" y="472.3" fill="#666666">│</text>
-<text x="747.6" y="472.3" fill="#e5e5e5">▼</text>
-<text x="756.0" y="472.3" fill="#666666">│</text>
+<text x="747.6 756.0" y="472.3" fill="#3b8eea">▼│</text>
 <text x="999.6" y="472.3" fill="#e5e5e5">▼</text>
 </svg>

@@ -1,7 +1,8 @@
 #!/bin/sh
 # Regenerate the docs/img/*.svg captures from real TabMux sessions.
 # Runs tabmux inside a detached tmux with a neutral HOME/prompt, captures the
-# screen with colors and renders it to SVG. Requires tmux and python3.
+# screen with colors and renders it to SVG (buttons as Nerd Font pills, caps
+# drawn as shapes). Requires tmux and python3.
 set -eu
 
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
@@ -51,7 +52,7 @@ EOF
 cat >"$WORK/run.sh" <<EOF
 #!/bin/sh
 exec env -i PATH=/usr/local/bin:/usr/bin:/bin HOME="$H" USER=user SHELL=/bin/bash \
-  TERM=xterm-256color LANG=C.UTF-8 "$ROOT/target/release/tabmux" -w "$WORK/demo.toml"
+  TERM=xterm-256color LANG=C.UTF-8 TABMUX_NERD_FONT=1 "$ROOT/target/release/tabmux" -w "$WORK/demo.toml"
 EOF
 chmod +x "$WORK/run.sh"
 

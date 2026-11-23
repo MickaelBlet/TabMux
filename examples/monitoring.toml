@@ -10,7 +10,7 @@ split = "horizontal"
 
 [[tab.layout.panes]]
 split = "vertical"
-panes = [{ command = "top" }, { command = "watch -n 2 df -h" }]
+panes = [{ command = "htop" }, { command = "watch -n 2 df -h" }]
 
 [[tab.layout.panes]]
 split = "vertical"

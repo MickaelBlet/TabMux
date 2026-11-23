@@ -110,6 +110,8 @@ pub struct App {
     /// (active tab, focused pane) at the last scroll update.
     last_active: Option<(usize, PaneId)>,
     pub quit: bool,
+    /// Draw `[x]` buttons as Nerd Font pills (`--nerd-font`).
+    pub nerd_font: bool,
     pub size: Rect,
     status: Option<(String, Instant)>,
     clipboard: String,
@@ -140,6 +142,7 @@ impl App {
             tab_scroll: 0,
             last_active: None,
             quit: false,
+            nerd_font: false,
             size,
             status: None,
             clipboard: String::new(),

@@ -16,7 +16,13 @@ const IDLE_BG: Color = Color::Indexed(236);
 const SIDEBAR_BG: Color = Color::Indexed(234);
 const LINE_IDLE: Color = Color::DarkGray;
 const LINE_ACTIVE: Color = Color::Yellow;
+/// Separator segments bordering the focused pane, and its scrollbars.
+const LINE_FOCUS: Color = Color::LightBlue;
 const ZOOM_FG: Color = Color::Green;
+/// Pill button background and its Nerd Font (Powerline) rounded caps.
+const PILL_BG: Color = Color::Indexed(238);
+const PILL_LEFT: &str = "\u{e0b6}";
+const PILL_RIGHT: &str = "\u{e0b4}";
 /// Separators, sidebar border and [▤] button of a tab in multicursor mode.
 const SYNC_FG: Color = Color::Magenta;
 /// Uniform background of the prompt reached with ^↑ / ^↓.
@@ -99,6 +105,8 @@ pub fn draw(f: &mut Frame, app: &App) {
             continue;
         };
         let focused = tab.is_some_and(|t| t.focus == pv.id);
+        // Scrollbars only show the focus color when there is something to tell apart.
+        let focus_bar = focused && v.panes.len() > 1;
 
         if let Some(t) = pv.title {
             let style = if focused {
@@ -151,7 +159,16 @@ pub fn draw(f: &mut Frame, app: &App) {
             let width = pv.content.width as usize;
             let max = (crate::pane::WIDE_COLS as usize).saturating_sub(width);
             let active = app.drag == Drag::HScrollbar(pv.id) || hovered(bar);
-            draw_scrollbar(f, bar, pane.hscroll as usize, max, width, active, app.hover);
+            draw_scrollbar(
+                f,
+                bar,
+                pane.hscroll as usize,
+                max,
+                width,
+                active,
+                focus_bar,
+                app.hover,
+            );
         }
         if let Some(bar) = pv.scrollbar {
             let (offset, max) = pane.scroll_info();
@@ -163,6 +180,7 @@ pub fn draw(f: &mut Frame, app: &App) {
                 max,
                 pv.content.height as usize,
                 active,
+                focus_bar,
                 app.hover,
             );
         }
@@ -276,6 +294,12 @@ pub fn draw(f: &mut Frame, app: &App) {
                 (false, false) => LINE_IDLE,
             }),
         );
+        if !active
+            && let Some(pv) = tab.and_then(|t| v.pane(t.focus))
+            && let Some(r) = s.border(pv.rect)
+        {
+            fill(f, r, sym, Style::default().fg(LINE_FOCUS));
+        }
     }
 
     if let Drag::Pane {
@@ -296,19 +320,20 @@ pub fn draw(f: &mut Frame, app: &App) {
     }
 
     for b in &v.buttons {
-        let style = if hovered(b.rect) {
+        let hot = hovered(b.rect);
+        let fg = match b.target {
+            Target::Quit | Target::ClosePane(_) | Target::TabClose(_) => Color::LightRed,
+            Target::Zoom(id) if app.tabs.iter().any(|t| t.zoom == Some(id)) => ZOOM_FG,
+            Target::Sync(_) if sync => SYNC_FG,
+            _ => Color::LightYellow,
+        };
+        if app.nerd_font && draw_pill(f, b.rect, &b.label, fg, hot) {
+            continue;
+        }
+        let style = if hot {
             Style::default().bg(Color::Yellow).fg(Color::Black)
         } else {
-            match b.target {
-                Target::Quit | Target::ClosePane(_) | Target::TabClose(_) => {
-                    Style::default().fg(Color::LightRed)
-                }
-                Target::Zoom(id) if app.tabs.iter().any(|t| t.zoom == Some(id)) => {
-                    Style::default().fg(ZOOM_FG)
-                }
-                Target::Sync(_) if sync => Style::default().fg(SYNC_FG),
-                _ => Style::default().fg(Color::LightYellow),
-            }
+            Style::default().fg(fg)
         };
         f.buffer_mut()
             .set_string(b.rect.x, b.rect.y, &b.label, style);
@@ -321,6 +346,26 @@ pub fn draw(f: &mut Frame, app: &App) {
     } else if app.drag == Drag::None {
         draw_tooltip(f, app);
     }
+}
+
+/// Draw a `[x]` label as a Nerd Font pill: rounded caps around the inner text
+/// on a filled background. Same width as the label, so geometry is unchanged.
+/// Returns false (nothing drawn) for labels without brackets.
+fn draw_pill(f: &mut Frame, rect: Rect, label: &str, fg: Color, hot: bool) -> bool {
+    let Some(inner) = label.strip_prefix('[').and_then(|l| l.strip_suffix(']')) else {
+        return false;
+    };
+    let (bg, fg) = if hot {
+        (Color::Yellow, Color::Black)
+    } else {
+        (PILL_BG, fg)
+    };
+    let buf = f.buffer_mut();
+    let cap = Style::default().fg(bg);
+    buf.set_string(rect.x, rect.y, PILL_LEFT, cap);
+    buf.set_string(rect.x + 1, rect.y, inner, Style::default().fg(fg).bg(bg));
+    buf.set_string(rect.right() - 1, rect.y, PILL_RIGHT, cap);
+    true
 }
 
 /// One-line hint next to the hovered button.
@@ -458,7 +503,16 @@ fn draw_sidebar(f: &mut Frame, app: &App) {
         let cap = bar.height as usize;
         let max = v.rows_total.saturating_sub(cap);
         let active = app.drag == Drag::TabScrollbar || app.hover.is_some_and(|p| bar.contains(p));
-        draw_scrollbar(f, bar, app.tab_scroll.min(max), max, cap, active, app.hover);
+        draw_scrollbar(
+            f,
+            bar,
+            app.tab_scroll.min(max),
+            max,
+            cap,
+            active,
+            false,
+            app.hover,
+        );
     }
 }
 
@@ -628,6 +682,8 @@ fn draw_help(f: &mut Frame, rect: Rect) {
 /// Scrollbar with arrows at both ends: vertical (▲/▼), or horizontal (◀/▶)
 /// when `bar` is a single row. `pos` is in `0..=max` (0 = top/left),
 /// `viewport` is the number of visible lines or columns.
+/// `focus` draws the whole bar in the focus color (focused pane).
+#[allow(clippy::too_many_arguments)]
 fn draw_scrollbar(
     f: &mut Frame,
     bar: Rect,
@@ -635,8 +691,10 @@ fn draw_scrollbar(
     max: usize,
     viewport: usize,
     active: bool,
+    focus: bool,
     hover: Option<Position>,
 ) {
+    let base = if focus { LINE_FOCUS } else { Color::Gray };
     let horizontal = bar.height == 1 && bar.width > 1;
     let len_cells = if horizontal { bar.width } else { bar.height };
     if len_cells < 3 {
@@ -652,7 +710,7 @@ fn draw_scrollbar(
     };
     let arrow = |p: Position| {
         let hot = hover == Some(p);
-        Style::default().fg(if hot { LINE_ACTIVE } else { Color::Gray })
+        Style::default().fg(if hot { LINE_ACTIVE } else { base })
     };
     let (first, last) = if horizontal {
         ("◀", "▶")
@@ -674,8 +732,8 @@ fn draw_scrollbar(
         let start = (((track - len) * pos) as f32 / max as f32).round() as usize;
         (start, len)
     };
-    let thumb = Style::default().fg(if active { LINE_ACTIVE } else { Color::Gray });
-    let rail = Style::default().fg(LINE_IDLE);
+    let thumb = Style::default().fg(if active { LINE_ACTIVE } else { base });
+    let rail = Style::default().fg(if focus { LINE_FOCUS } else { LINE_IDLE });
     let (thumb_sym, rail_sym) = if horizontal {
         ("▬", "─")
     } else {

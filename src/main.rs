@@ -28,11 +28,18 @@ use crate::app::App;
 use crate::event::AppEvent;
 use crate::workspace::Workspace;
 
-const USAGE: &str = "Usage: tabmux [-w|--workspace <file.toml>]";
+const USAGE: &str = "Usage: tabmux [-w|--workspace <file.toml>] [--nerd-font]";
 
-fn parse_args() -> Result<Option<Workspace>> {
+struct Args {
+    workspace: Option<Workspace>,
+    /// Draw buttons as Nerd Font pills.
+    nerd_font: bool,
+}
+
+fn parse_args() -> Result<Args> {
     let mut args = std::env::args().skip(1);
     let mut ws = None;
+    let mut nerd_font = std::env::var_os("TABMUX_NERD_FONT").is_some_and(|v| v != "0");
     while let Some(a) = args.next() {
         match a.as_str() {
             "-w" | "--workspace" => {
@@ -41,6 +48,7 @@ fn parse_args() -> Result<Option<Workspace>> {
                     .ok_or_else(|| anyhow::anyhow!("{a} needs a file"))?;
                 ws = Some(Workspace::load(std::path::Path::new(&path))?);
             }
+            "--nerd-font" => nerd_font = true,
             "-h" | "--help" => {
                 println!("{USAGE}");
                 std::process::exit(0);
@@ -48,11 +56,14 @@ fn parse_args() -> Result<Option<Workspace>> {
             _ => anyhow::bail!("unknown argument: {a}\n{USAGE}"),
         }
     }
-    Ok(ws)
+    Ok(Args {
+        workspace: ws,
+        nerd_font,
+    })
 }
 
 fn main() -> Result<()> {
-    let workspace = parse_args()?;
+    let args = parse_args()?;
     let mut terminal = ratatui::init();
     execute!(stdout(), EnableMouseCapture, EnableBracketedPaste)?;
 
@@ -62,14 +73,14 @@ fn main() -> Result<()> {
         prev_hook(info);
     }));
 
-    let result = run(&mut terminal, workspace);
+    let result = run(&mut terminal, args);
 
     let _ = execute!(stdout(), DisableMouseCapture, DisableBracketedPaste);
     ratatui::restore();
     result
 }
 
-fn run(terminal: &mut ratatui::DefaultTerminal, workspace: Option<Workspace>) -> Result<()> {
+fn run(terminal: &mut ratatui::DefaultTerminal, args: Args) -> Result<()> {
     let (tx, rx) = mpsc::channel();
 
     let input_tx = tx.clone();
@@ -82,7 +93,8 @@ fn run(terminal: &mut ratatui::DefaultTerminal, workspace: Option<Workspace>) ->
     });
 
     let size = terminal.size()?;
-    let mut app = App::new(Rect::new(0, 0, size.width, size.height), tx, workspace)?;
+    let mut app = App::new(Rect::new(0, 0, size.width, size.height), tx, args.workspace)?;
+    app.nerd_font = args.nerd_font;
 
     while !app.quit {
         app.refresh();

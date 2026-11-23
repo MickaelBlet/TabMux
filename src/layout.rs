@@ -32,6 +32,31 @@ pub struct Separator {
     pub path: Path,
 }
 
+impl Separator {
+    /// Part of the separator bordering `pane`, if they are adjacent.
+    pub fn border(&self, pane: Rect) -> Option<Rect> {
+        let r = self.rect;
+        match self.dir {
+            Dir::Vertical => {
+                if pane.right() != r.x && pane.x != r.right() {
+                    return None;
+                }
+                let top = r.top().max(pane.top());
+                let bottom = r.bottom().min(pane.bottom());
+                (top < bottom).then(|| Rect::new(r.x, top, r.width, bottom - top))
+            }
+            Dir::Horizontal => {
+                if pane.bottom() != r.y && pane.y != r.bottom() {
+                    return None;
+                }
+                let left = r.left().max(pane.left());
+                let right = r.right().min(pane.right());
+                (left < right).then(|| Rect::new(left, r.y, right - left, r.height))
+            }
+        }
+    }
+}
+
 /// Where a dragged pane lands relative to the pane under the cursor.
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Zone {
@@ -347,6 +372,23 @@ mod tests {
         let n = n.remove(1).unwrap();
         assert!(matches!(n, Node::Leaf(3)));
         assert!(n.remove(3).is_none());
+    }
+
+    #[test]
+    fn separator_border() {
+        let mut n = Node::Leaf(1);
+        n.split(1, Dir::Vertical, 2);
+        n.split(2, Dir::Horizontal, 3);
+        let (panes, seps) = n.compute(Rect::new(0, 0, 81, 25));
+        let rect = |id| panes.iter().find(|(p, _)| *p == id).unwrap().1;
+        let (v, h) = (&seps[0], &seps[1]);
+        // Pane 1 borders the whole vertical separator, not the horizontal one.
+        assert_eq!(v.border(rect(1)), Some(v.rect));
+        assert_eq!(h.border(rect(1)), None);
+        // Pane 3 borders the lower part of the vertical one and the horizontal one.
+        let b = v.border(rect(3)).unwrap();
+        assert_eq!((b.y, b.bottom()), (rect(3).y, rect(3).bottom()));
+        assert_eq!(h.border(rect(3)), Some(h.rect));
     }
 
     #[test]
