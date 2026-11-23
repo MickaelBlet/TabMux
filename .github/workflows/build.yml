@@ -1,0 +1,93 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  CARGO_TERM_COLOR: always
+  # Oldest glibc the binaries must run on.
+  GLIBC: "2.28"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo fmt --check
+      - run: cargo clippy --all-targets -- -D warnings
+      - run: cargo test
+
+  build:
+    needs: check
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        target: [x86_64-unknown-linux-gnu, aarch64-unknown-linux-gnu]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: ${{ matrix.target }}
+      - uses: mlugg/setup-zig@v2
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: cargo-zigbuild
+
+      # zig links against the requested glibc version instead of the runner's.
+      - name: Build
+        run: cargo zigbuild --release --locked --target ${{ matrix.target }}.${{ env.GLIBC }}
+
+      - name: Check glibc requirement
+        run: |
+          bin=target/${{ matrix.target }}/release/tabmux
+          max=$(readelf -W --version-info "$bin" | grep -o 'GLIBC_[0-9.]*' | sed 's/GLIBC_//' | sort -uV | tail -1)
+          echo "highest required glibc: $max"
+          [ "$(printf '%s\n' "$max" "$GLIBC" | sort -V | tail -1)" = "$GLIBC" ]
+
+      - name: Package
+        id: pkg
+        run: |
+          version=${GITHUB_REF_NAME#v}
+          [[ $GITHUB_REF == refs/tags/* ]] || version=$(git rev-parse --short HEAD)
+          name=tabmux-$version-${{ matrix.target }}
+          mkdir "$name"
+          cp target/${{ matrix.target }}/release/tabmux README.md CHANGELOG.md "$name/"
+          tar czf "$name.tar.gz" "$name"
+          sha256sum "$name.tar.gz" > "$name.tar.gz.sha256"
+          echo "name=$name" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.pkg.outputs.name }}
+          path: ${{ steps.pkg.outputs.name }}.tar.gz*
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          generate_release_notes: true
